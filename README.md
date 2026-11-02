@@ -16,3 +16,4 @@ Bu proje, **CEN315 Test Engineering** dersinin ilk 6 haftalık ders slaytlarınd
 - **Rastgele Sıralama (Shuffle):** Soruları tekrarsız rastgele sırayla çözebilme.
 - **Hızlı Soru Atlama:** 200 soruyu görsel durumlarıyla listeleyen açılır ızgara menü.
 - **Klavye Kısayolları:** Sol/Sağ Ok tuşları ile gezinme; A, B, C, D veya 1, 2, 3, 4 tuşları ile şık işaretleme.
+

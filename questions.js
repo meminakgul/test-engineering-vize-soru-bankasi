@@ -7,91 +7,91 @@ const QUESTIONS = [
   {
     "id": 1,
     "chapter": 1,
-    "topic": "Test Mühendisliği Tanımı",
-    "question": "Modern Test Mühendisliği (Test Engineering) kavramının en doğru tanımı aşağıdakilerden hangisidir?",
+    "topic": "Definition of Test Engineering",
+    "question": "What is the modern definition of Test Engineering?",
     "options": [
-      "Yazılım geliştirme tamamlandıktan sonra kodda kalan hataları bulup geliştiricilere bildirme sürecidir.",
-      "Yazılım geliştirme yaşam döngüsünün tamamına kaliteyi entegre eden, hataları önlemeye odaklanan proaktif bir kalite güvence disiplinidir.",
-      "Yalnızca kullanıcı arayüzünü (UI) test ederek sistemin görsel doğruluğunu onaylama yöntemidir.",
-      "Geliştiricilerin yazdığı birim testlerin doğruluğunu denetleyen manuel bir kalite kontrol sürecidir."
+      "A manual process of finding bugs after development is completely finished.",
+      "A proactive quality assurance discipline that integrates quality considerations throughout the entire software development lifecycle to prevent defects.",
+      "A practice strictly focused on automated GUI record-and-playback testing.",
+      "An administrative role responsible for approving software deployment budgets."
     ],
     "answer": 1
   },
   {
     "id": 2,
     "chapter": 1,
-    "topic": "QA ve QC Ayrımı",
-    "question": "Kalite Güvence (Quality Assurance - QA) ve Kalite Kontrol (Quality Control - QC) arasındaki temel fark nedir?",
+    "topic": "QA vs QC",
+    "question": "What is the primary difference between Quality Assurance (QA) and Quality Control (QC)?",
     "options": [
-      "QA ürün odaklıdır ve bitmiş ürünü inceler; QC ise süreç odaklıdır ve süreçleri denetler.",
-      "QA dinamik testleri kapsar; QC sadece statik kod incelemelerinden oluşur.",
-      "QA kalitenin elde edileceğine dair güven oluşturan süreç odaklı faaliyettir; QC ise teslimatın gereksinimleri karşılayıp karşılamadığını inceleyen ürün odaklı faaliyettir.",
-      "QA yalnızca yöneticiler tarafından yapılır; QC ise müşteriler tarafından gerçekleştirilir."
+      "QA is process-oriented and establishes confidence that quality will be achieved; QC is product-oriented and evaluates whether deliverables meet requirements.",
+      "QA is product-oriented focusing on testing; QC is process-oriented focusing on documentation.",
+      "QA is performed exclusively by developers; QC is performed exclusively by end users.",
+      "QA only applies to hardware; QC only applies to software."
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "id": 3,
     "chapter": 1,
     "topic": "Verification vs Validation",
-    "question": "Doğrulama (Verification) ve Geçerleme (Validation) kavramlarını özetleyen temel sorular hangi seçenekte doğru eşleştirilmiştir?",
+    "question": "Which questions accurately summarize the distinction between Verification and Validation?",
     "options": [
-      "Verification: 'Doğru ürünü mü yapıyoruz?' | Validation: 'Ürünü doğru mu yapıyoruz?'",
-      "Verification: 'Ürünü doğru mu yapıyoruz?' | Validation: 'Doğru ürünü mü yapıyoruz?'",
-      "Verification: 'Kod hızlı çalışıyor mu?' | Validation: 'Kod hatasız derleniyor mu?'",
-      "Verification: 'Testler otomatik koşuyor mu?' | Validation: 'Test kapsamı yeterli mi?'"
+      "Verification asks 'Are we building the right product?'; Validation asks 'Are we building the product right?'",
+      "Verification asks 'Are we building the product right?'; Validation asks 'Are we building the right product?'",
+      "Verification checks runtime speed; Validation checks compilation errors.",
+      "Verification is dynamic testing; Validation is static code inspection."
     ],
     "answer": 1
   },
   {
     "id": 4,
     "chapter": 1,
-    "topic": "Testing ve Risk",
-    "question": "Yazılım testi hakkında aşağıda verilen ifadelerden hangisi ISTQB ve ders slaytlarına göre doğrudur?",
+    "topic": "Testing and Risk",
+    "question": "What does software testing provide according to testing fundamentals?",
     "options": [
-      "Yazılım testi sistemin %100 hatasız olduğunu kesin olarak kanıtlar.",
-      "Yazılım testi sistemin kalitesi ve riskleri hakkında bilgi sağlar, ancak hatasızlık garantisi veremez.",
-      "Tüm test senaryoları geçtiğinde yazılımda hiçbir güvenlik açığı kalmadığı doğrulanmış olur.",
-      "Test mühendisliği yalnızca fonksiyonel gereksinimlerin test edilmesiyle ilgilenir."
+      "An absolute guarantee that software is 100% bug-free.",
+      "Information about risk and quality, rather than absolute guarantees.",
+      "Proof that no security vulnerabilities exist in the application.",
+      "A complete replacement for formal requirements specifications."
     ],
     "answer": 1
   },
   {
     "id": 5,
     "chapter": 1,
-    "topic": "Statik ve Dinamik Test",
-    "question": "Aşağıdakilerden hangisi Statik Test (Static Testing) yöntemlerine örnek olarak verilemez?",
+    "topic": "Static vs Dynamic Testing",
+    "question": "Which of the following is an example of Dynamic Testing rather than Static Testing?",
     "options": [
-      "Gereksinim walkthrough (üzerinden geçme) toplantıları ve tasarım incelemeleri.",
-      "Statik Kod Analizi (SAST), linter kontrolleri ve kod incelemeleri (Code Review).",
-      "Sistemi canlı ortamda çalıştırıp REST API uç noktalarına HTTP istekleri göndermek.",
-      "Gizli anahtar (Secret scanning) ve bağımlılık/SBOM (Yazılım Malzeme Listesi) taramaları."
+      "Performing static application security testing (SAST) and linter scans.",
+      "Executing the system and sending HTTP requests to API endpoints.",
+      "Conducting requirements walkthroughs and architectural design reviews.",
+      "Reviewing software bill of materials (SBOM) and secret scanning."
     ],
-    "answer": 2
+    "answer": 1
   },
   {
     "id": 6,
     "chapter": 1,
-    "topic": "Shift-Left Yaklaşımı",
-    "question": "Yazılım testinde 'Shift-Left' (Sola Kaydırma) yaklaşımının temel amacı nedir?",
+    "topic": "Shift-Left Principle",
+    "question": "What is the primary objective of the 'Shift-Left' approach in software testing?",
     "options": [
-      "Test aktivitelerini yazılım geliştirme sürecinin son aşamasına, dağıtım öncesine kaydırmak.",
-      "Testleri gereksinim analizi ve tasarım gibi yaşam döngüsünün en erken aşamalarına çekerek hataları erkenden ve düşük maliyetle önlemek.",
-      "Birim testlerinin tamamını geliştiriciler yerine müşteriye yaptırmak.",
-      "Yalnızca kullanıcı kabul testlerine odaklanarak teknik testleri sol tarafa bırakmak."
+      "Postponing all testing activities until production release.",
+      "Introducing testing activities into the earliest phases of development to detect and prevent defects when fixes are cheapest.",
+      "Replacing all unit tests with user acceptance tests.",
+      "Transferring testing responsibilities entirely to customers."
     ],
     "answer": 1
   },
   {
     "id": 7,
     "chapter": 1,
-    "topic": "ISO/IEC 25010 Kalite Modeli",
-    "question": "ISO/IEC 25010 Ürün Kalite Modeli'nde toplam kaç temel ürün kalite karakteristiği tanımlanmıştır?",
+    "topic": "ISO/IEC 25010 Quality Model",
+    "question": "How many product quality characteristics are defined in the ISO/IEC 25010 quality model?",
     "options": [
-      "4 temel karakteristik",
-      "6 temel karakteristik",
-      "8 temel karakteristik",
-      "12 temel karakteristik"
+      "4",
+      "6",
+      "8",
+      "10"
     ],
     "answer": 2
   },
@@ -99,12 +99,12 @@ const QUESTIONS = [
     "id": 8,
     "chapter": 1,
     "topic": "ISO 25010 - Functional Suitability",
-    "question": "ISO/IEC 25010'a göre 'Functional Suitability' (Fonksiyonel Uygunluk) karakteristiğinin alt özellikleri hangileridir?",
+    "question": "Which sub-characteristics belong to Functional Suitability in ISO/IEC 25010?",
     "options": [
-      "Zaman davranışı (Time behavior), Kaynak kullanımı, Kapasite",
-      "Tamlık (Completeness), Doğruluk (Correctness), Uygunluk (Appropriateness)",
-      "Gizlilik, Bütünlük, İnkar Edilemezlik",
-      "Öğrenilebilirlik, Kullanılabilirlik, Estetik"
+      "Time behavior, resource utilization, and capacity.",
+      "Completeness, correctness, and appropriateness.",
+      "Confidentiality, integrity, and authenticity.",
+      "Modularity, reusability, and testability."
     ],
     "answer": 1
   },
@@ -112,12 +112,12 @@ const QUESTIONS = [
     "id": 9,
     "chapter": 1,
     "topic": "ISO 25010 - Performance Efficiency",
-    "question": "Sistemin yanıt süresi, işlem hacmi ve kaynak tüketimini inceleyen ISO/IEC 25010 kalite karakteristiği hangisidir?",
+    "question": "Which quality characteristic evaluates time behavior, resource utilization, and capacity?",
     "options": [
-      "Maintainability (Bakım Yapılabilirlik)",
-      "Reliability (Güvenilirlik)",
-      "Performance Efficiency (Performans Verimliliği)",
-      "Portability (Taşınabilirlik)"
+      "Maintainability",
+      "Reliability",
+      "Performance Efficiency",
+      "Portability"
     ],
     "answer": 2
   },
@@ -125,12 +125,12 @@ const QUESTIONS = [
     "id": 10,
     "chapter": 1,
     "topic": "ISO 25010 - Reliability",
-    "question": "Hata toleransı (Fault tolerance), olgunluk (maturity), kullanılabilirlik (availability) ve kurtarılabilirlik (recoverability) hangi kalite özelliğinin alt dallarıdır?",
+    "question": "Fault tolerance, maturity, availability, and recoverability are sub-characteristics of which quality attribute?",
     "options": [
-      "Reliability (Güvenilirlik)",
-      "Security (Güvenlik)",
-      "Compatibility (Uyumluluk)",
-      "Functional Suitability (Fonksiyonel Uygunluk)"
+      "Reliability",
+      "Usability",
+      "Compatibility",
+      "Maintainability"
     ],
     "answer": 0
   },
@@ -138,488 +138,488 @@ const QUESTIONS = [
     "id": 11,
     "chapter": 1,
     "topic": "ISO 25010 - Maintainability",
-    "question": "Modülerlik, yeniden kullanılabilirlik, analiz edilebilirlik, değiştirilebilirlik ve **test edilebilirlik (testability)** hangi karakteristik altında yer alır?",
+    "question": "Which ISO/IEC 25010 quality characteristic includes modularity, analyzability, modifiability, and testability?",
     "options": [
-      "Portability (Taşınabilirlik)",
-      "Maintainability (Bakım Yapılabilirlik)",
-      "Compatibility (Uyumluluk)",
-      "Usability (Kullanılabilirlik)"
+      "Portability",
+      "Maintainability",
+      "Usability",
+      "Functional Suitability"
     ],
     "answer": 1
   },
   {
     "id": 12,
     "chapter": 1,
-    "topic": "Eşdeğerlik Payları (EP)",
-    "question": "Eşdeğerlik Paylarına Ayırma (Equivalence Partitioning - EP) tekniğinin temel felsefesi nedir?",
+    "topic": "Equivalence Partitioning (EP)",
+    "question": "What is the core principle of Equivalence Partitioning (EP)?",
     "options": [
-      "Girdi alanındaki tüm olası değerleri tek tek çalıştırarak %100 kapsama sağlamak.",
-      "Girdileri sistemin benzer şekilde davranması beklenen sınıflara bölmek ve her sınıftan en az bir temsilci değer seçip test etmek.",
-      "Yalnızca sistemin sınır değerlerini test ederek ara değerleri tamamen göz ardı etmek.",
-      "Kaynak kodun her bir satırını en az bir kez çalıştıracak rastgele girdiler üretmek."
+      "Testing every single possible input value in the domain.",
+      "Dividing inputs into classes expected to be treated similarly, and selecting one representative from each class.",
+      "Focusing exclusively on values where the program crashes.",
+      "Testing only the extreme minimum and maximum values."
     ],
     "answer": 1
   },
   {
     "id": 13,
     "chapter": 1,
-    "topic": "Sınır Değer Analizi (BVA)",
-    "question": "Sınır Değer Analizi (Boundary Value Analysis - BVA) yönteminde testlerin özellikle sınır bölgelerine yoğunlaşmasının temel nedeni nedir?",
+    "topic": "Boundary Value Analysis (BVA)",
+    "question": "Why does Boundary Value Analysis (BVA) focus test cases around the edges of equivalence partitions?",
     "options": [
-      "Sınır bölgelerini test etmenin kod yazımını kolaylaştırması.",
-      "Yazılım hatalarının (kusurların) genellikle eşdeğerlik sınıflarının sınırlarında (boundaries) kümelenmesi.",
-      "Sınır değerlerin her zaman geçersiz (invalid) veri üretmesi.",
-      "İş birimlerinin yalnızca sınır değerlerle ilgilenmesi."
+      "Because boundary values are easier to automate than other values.",
+      "Because defects cluster disproportionately at boundaries.",
+      "Because boundaries are always rejected by the compiler.",
+      "Because stakeholders only review boundary tests."
     ],
     "answer": 1
   },
   {
     "id": 14,
     "chapter": 1,
-    "topic": "EP/BVA Parola Örneği",
-    "question": "Şartname: 'Parola 8-20 karakter uzunluğunda olmalı, en az bir harf ve bir rakam içermeli, boşluk içermemelidir.' BVA tekniğine göre karakter uzunluğu için hangi değerler öncelikle test edilmelidir?",
+    "topic": "BVA Password Example",
+    "question": "Specification: 'Password length must be between 8 and 20 characters.' Which length values should be tested according to BVA?",
     "options": [
       "0, 5, 10, 25",
       "7, 8, 9, 20, 21",
-      "1, 2, 8, 20, 100",
-      "8 ve 20 (yalnızca geçerli sınırlar)"
+      "1, 2, 8, 20",
+      "8 and 20 only"
     ],
     "answer": 1
   },
   {
     "id": 15,
     "chapter": 1,
-    "topic": "EP/BVA Tamsayı Örneği",
-    "question": "Bir girdi alanı 1 ile 999 arasındaki tamsayıları kabul etmekte ve başta sıfır ('leading zeros') olmasını reddetmektedir. Bu alan için geçersiz (invalid) sınır değerleri aşağıdakilerden hangileridir?",
+    "topic": "BVA Integer Field Example",
+    "question": "An input field accepts integers from 1 to 999 and rejects leading zeros. Which values represent the immediate invalid boundary values?",
     "options": [
-      "1 ve 999",
-      "0 ve 1000",
-      "50 ve 500",
-      "100 ve 998"
+      "1 and 999",
+      "0 and 1000",
+      "2 and 998",
+      "-1 and 1001"
     ],
     "answer": 1
   },
   {
     "id": 16,
     "chapter": 1,
-    "topic": "Risk Tabanlı Test (RBT)",
-    "question": "Risk Tabanlı Test (Risk-Based Testing - RBT) yaklaşımında bir riskin büyüklüğü (Risk Değeri / RPN) hangi bileşenlerin çarpımıyla hesaplanır?",
+    "topic": "Risk-Based Testing (RBT)",
+    "question": "In Risk-Based Testing (RBT), how is risk magnitude computed in an FMEA-style model?",
     "options": [
-      "Risk = Maliyet × Süre × Kod Satır Sayısı",
-      "Risk = Gerçekleşme Olasılığı (Likelihood) × Etki (Impact) × Tespit Edilebilirlik (Detectability)",
-      "Risk = Test Kapsamı × Birim Test Sayısı × Geliştirici Sayısı",
-      "Risk = Hata Sayısı × Hata Çözüm Süresi × Proje Bütçesi"
+      "Risk = Lines of Code x Number of Testers",
+      "Risk = Likelihood x Impact x Detectability",
+      "Risk = Total Test Cases / Execution Time",
+      "Risk = Project Budget x Defect Density"
     ],
     "answer": 1
   },
   {
     "id": 17,
     "chapter": 1,
-    "topic": "FMEA Yaklaşımı",
-    "question": "FMEA (Failure Mode and Effects Analysis) metodolojisinin test mühendisliğindeki birincil rolü nedir?",
+    "topic": "FMEA in Testing",
+    "question": "What is the primary purpose of applying Failure Mode and Effects Analysis (FMEA) to test design?",
     "options": [
-      "Testlerin koşum sürelerini milisaniye cinsinden ölçmek.",
-      "Olası arıza modlarını, bunların etkilerini ve tespit zorluklarını puanlayarak test önceliklendirmesi yapmak.",
-      "Geliştiricilerin kod yazım hızını artırmak için otomatik şablon üretmek.",
-      "Kaynak kodun sözdizimsel hatalarını otomatik düzeltmek."
+      "Measuring source code compilation speed.",
+      "Systematically scoring failure modes to prioritize test design where risk is highest.",
+      "Automatically generating unit test stubs.",
+      "Eliminating the need for integration testing."
     ],
     "answer": 1
   },
   {
     "id": 18,
     "chapter": 1,
-    "topic": "SDLC - Waterfall vs Agile",
-    "question": "Şelale (Waterfall) modeli ile Çevik (Agile/DevOps) modellerde test mühendisinin çalışma biçimi arasındaki en temel fark nedir?",
+    "topic": "Waterfall vs Agile Testing",
+    "question": "How does the role of testing differ between Sequential (Waterfall) and Agile/DevOps lifecycles?",
     "options": [
-      "Waterfall'da test geliştirme ile paralel başlar; Agile'da ise tüm yazılım bittikten sonra başlar.",
-      "Waterfall'da test genellikle kodlama bittikten sonra ayrı bir aşama olarak yürütülür; Agile'da ise her sprintte ve CI/CD hattında sürekli olarak geliştirme ile iç içedir.",
-      "Waterfall modellerinde otomatik test yapılırken, Agile modellerde yalnızca manuel test uygulanır.",
-      "Waterfall'da test mühendisi bulunmaz, testleri doğrudan proje yöneticisi yapar."
+      "Waterfall performs testing continuously; Agile only tests at the very end.",
+      "Waterfall isolates testing into a separate phase after implementation; Agile embeds testing continuously within iterations and CI/CD.",
+      "Waterfall relies entirely on automated testing; Agile only permits manual testing.",
+      "There is no difference in testing activities between Waterfall and Agile."
     ],
     "answer": 1
   },
   {
     "id": 19,
     "chapter": 1,
-    "topic": "Test Seviyeleri Hiyerarşisi",
-    "question": "Yazılım test seviyelerinin en dar kapsamdan en geniş kapsama doğru hiyerarşik sıralaması hangi seçenekte doğrudur?",
+    "topic": "Testing Level Hierarchy",
+    "question": "What is the correct hierarchical order of test levels from narrowest to broadest scope?",
     "options": [
-      "Kabul Testi → Sistem Testi → Entegrasyon Testi → Birim Testi",
-      "Birim Testi → Entegrasyon Testi → Sistem Testi → Kabul Testi",
-      "Entegrasyon Testi → Birim Testi → Sistem Testi → Kabul Testi",
-      "Birim Testi → Sistem Testi → Entegrasyon Testi → Kabul Testi"
+      "Acceptance -> System -> Integration -> Unit",
+      "Unit -> Integration -> System -> Acceptance",
+      "Integration -> Unit -> System -> Acceptance",
+      "Unit -> System -> Integration -> Acceptance"
     ],
     "answer": 1
   },
   {
     "id": 20,
     "chapter": 1,
-    "topic": "Birim Testi (Unit Testing) Kapsamı",
-    "question": "Birim Testinin (Unit Testing) kapsamı ve temel çalışma biçimi nedir?",
+    "topic": "Unit Testing Scope",
+    "question": "What is the primary scope of Unit Testing?",
     "options": [
-      "Tüm sistemin canlı veritabanı ve harici ödeme sağlayıcıları ile olan uçtan uca etkileşimini doğrulamak.",
-      "En küçük test edilebilir kod parçalarını (fonksiyon, metot, sınıf) diğer bağımlılıklarından izole ederek test etmek.",
-      "Kullanıcı arayüzünde butonlara tıklayarak sayfalar arası geçişleri incelemek.",
-      "Yazılımın yüksek yük altındaki bellek sızıntılarını ölçmek."
+      "Evaluating complete end-to-end user workflows with live third-party APIs.",
+      "Testing individual components, functions, or classes in isolation from external dependencies.",
+      "Validating visual CSS alignment across web browsers.",
+      "Benchmarking server hardware memory throughput."
     ],
     "answer": 1
   },
   {
     "id": 21,
     "chapter": 1,
-    "topic": "Entegrasyon Testi Kapsamı",
-    "question": "Entegrasyon Testinin (Integration Testing) temel odak noktası nedir?",
+    "topic": "Integration Testing Scope",
+    "question": "What is the primary focus of Integration Testing?",
     "options": [
-      "Tek bir fonksiyonun algoritma doğruluğu.",
-      "Birlikte çalışan bileşenler, modüller veya harici alt sistemler arasındaki arayüzler ve veri alışverişi.",
-      "Müşteri sözleşmesindeki hukuki şartların uygunluğu.",
-      "Yalnızca CSS ve HTML stillerinin tarayıcı uyumluluğu."
+      "Verifying internal branch coverage of a single private method.",
+      "Checking interactions and data exchange across interfaces between integrated components.",
+      "Validating whether the customer contract has been signed.",
+      "Benchmarking font rendering on mobile screens."
     ],
     "answer": 1
   },
   {
     "id": 22,
     "chapter": 1,
-    "topic": "Sistem Testi Kapsamı",
-    "question": "Sistem Testi (System Testing) aşamasında test edilen kapsam nedir?",
+    "topic": "System Testing Scope",
+    "question": "What is the scope of System Testing?",
     "options": [
-      "Yalnızca izole edilmiş tek bir sınıfın değişkenleri.",
-      "Tüm modülleri bir araya getirilmiş, uçtan uca eksiksiz ve entegre sistemin fonksiyonel ve fonksiyonel olmayan gereksinimleri.",
-      "Geliştiricilerin yerel makinesindeki derleme logları.",
-      "Ürünün kaynak kodundaki değişken adlandırma standartları."
+      "Validating the complete, integrated application against specified functional and non-functional requirements.",
+      "Checking syntax errors inside an isolated algorithm.",
+      "Inspecting the code review comments in a Git pull request.",
+      "Running static linters on local developer machines."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 23,
     "chapter": 1,
-    "topic": "Kabul Testi (Acceptance Testing)",
-    "question": "Kabul Testinin (Acceptance / UAT) diğer test seviyelerinden en belirgin farkı nedir?",
+    "topic": "Acceptance Testing Scope",
+    "question": "What distinguishes Acceptance Testing from earlier testing levels?",
     "options": [
-      "Geliştiriciler tarafından kod seviyesinde debug işlemi yapılmasıdır.",
-      "Sistemin iş ihtiyaçlarını karşıladığının ve son kullanıcılar / paydaşlar tarafından onaylanmaya hazır olduğunun doğrulanmasıdır.",
-      "Kod kapsama oranının (Code coverage) %100 olduğunu matematiksel olarak kanıtlamaktır.",
-      "Postman üzerinden birim test yazmaktır."
+      "It is performed with debuggers attached to source code.",
+      "It validates fitness for purpose with stakeholders and confirms readiness for operational use.",
+      "It only tests database query indexing.",
+      "It is strictly automated using unit test frameworks."
     ],
     "answer": 1
   },
   {
     "id": 24,
     "chapter": 1,
-    "topic": "Test Mühendisi Teknik Sorumlulukları",
-    "question": "Aşağıdakilerden hangisi modern bir Test Mühendisinin teknik sorumlulukları arasında doğrudan yer alır?",
+    "topic": "Technical Responsibilities of Test Engineers",
+    "question": "Which of the following is a direct technical responsibility of a modern test engineer?",
     "options": [
-      "Şirketin finansal bütçesini planlamak ve maaş bordrolarını onaylamak.",
-      "Farklı test seviyelerinde test senaryoları tasarlamak, test otomasyon çatıları kurmak ve CI/CD süreçlerine testleri entegre etmek.",
-      "Müşterilerle satış sözleşmelerini imzalamak.",
-      "Yazılımın sunucu donanım parçalarını fiziksel olarak üretmek."
+      "Designing and executing tests across levels, building test automation, and integrating tests into CI/CD pipelines.",
+      "Authorizing corporate financial payroll disbursements.",
+      "Writing the initial business product charter.",
+      "Manufacturing server physical silicon hardware."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 25,
     "chapter": 1,
-    "topic": "Test Mühendisi İşbirlikçi Sorumlulukları",
-    "question": "Modern test mühendisliğinde işbirlikçi (collaborative) sorumluluklar kapsamında aşağıdakilerden hangisi vurgulanır?",
+    "topic": "Collaborative Responsibilities",
+    "question": "What is a key collaborative responsibility of a modern test engineer?",
     "options": [
-      "Test mühendisinin diğer geliştiricilerle hiçbir iletişim kurmadan tek başına çalışması.",
-      "Gereksinim incelemelerine katılmak, geliştiriciler ve ürün sahipleri ile birlikte 'test edilebilirlik' (testability) kriterlerini belirlemek.",
-      "Yalnızca üretim ortamındaki canlı sunucu çöktüğünde devreye girmek.",
-      "Tüm kod tabanını baştan tek başına yazmak."
+      "Working in total isolation without speaking to software developers.",
+      "Participating in requirements reviews, testability assessments, and defect analysis alongside developers and product owners.",
+      "Only interacting with code when a production outage occurs.",
+      "Rewriting all application business logic independently."
     ],
     "answer": 1
   },
   {
     "id": 26,
     "chapter": 1,
-    "topic": "Etik ve Profesyonellik",
-    "question": "ACM/IEEE ve ISTQB standartlarına göre bir Test Mühendisinin mesleki etik ilkeleri arasında aşağıdakilerden hangisi yer alır?",
+    "topic": "Ethics & Professionalism",
+    "question": "According to professional ethics in test engineering, how should test engineers handle reporting and risk?",
     "options": [
-      "Yöneticileri mutlu etmek için kritik hataları gizlemek.",
-      "Riskleri ve belirsizlikleri dürüstçe raporlamak; Kişisel Verileri (PII) korumak ve tarafsız değerlendirme yapmak.",
-      "Sadece şirketin hisse değerini koruyacak test sonuçlarını paylaşmak.",
-      "Müşterinin gerçek ortam verilerini kendi kişisel cihazlarına kopyalamak."
+      "Conceal critical defects to keep managers satisfied with delivery timelines.",
+      "Report findings truthfully, quantify uncertainty and risk, and respect user privacy and sensitive data.",
+      "Publish proprietary customer passwords on public forums.",
+      "Selectively report only passing test results."
     ],
     "answer": 1
   },
   {
     "id": 27,
     "chapter": 1,
-    "topic": "ISTQB Sertifikasyon Yolu",
-    "question": "Yazılım test uzmanlığı alanında uluslararası geçerliliği olan temel düzey ISTQB sertifikası hangisidir?",
+    "topic": "ISTQB Certification Path",
+    "question": "What is the globally recognized foundational certification for software testers offered by ISTQB?",
     "options": [
-      "CTFL (Certified Tester Foundation Level)",
-      "CTAL-TM (Test Manager)",
-      "PMP (Project Management Professional)",
-      "AWS Certified Solutions Architect"
+      "CTFL",
+      "PMP",
+      "CISSP",
+      "AWS Solutions Architect"
     ],
     "answer": 0
   },
   {
     "id": 28,
     "chapter": 1,
-    "topic": "Standartlar: ISO/IEC/IEEE 29119",
-    "question": "ISO/IEC/IEEE 29119 standart ailesi yazılım mühendisliğinde hangi alanı tanımlamak ve yönlendirmek için oluşturulmuştur?",
+    "topic": "Standards: ISO/IEC/IEEE 29119",
+    "question": "What is the primary scope of the ISO/IEC/IEEE 29119 international standard series?",
     "options": [
-      "Donanım devre kartı tasarım standartları",
-      "Yazılım testi süreçleri, kavramları, dokümantasyonu ve test teknikleri",
-      "Veritabanı ilişkisel modelleme kuralları",
-      "Ağ kablolama ve yönlendirici protokolleri"
+      "Hardware microprocessor fabrication.",
+      "Software testing processes, concepts, documentation, and techniques.",
+      "Relational database schema normalization.",
+      "Network Ethernet cabling specifications."
     ],
     "answer": 1
   },
   {
     "id": 29,
     "chapter": 1,
-    "topic": "Hata Bulma Maliyeti Eğrisi",
-    "question": "Yazılım mühendisliğindeki bilinen 'Hata Maliyeti Eğrisi'ne (Cost of Quality) göre, bir hatanın gereksinim aşamasında bulunması ile üretim (production) aşamasında bulunması arasındaki fark nedir?",
+    "topic": "Cost of Quality",
+    "question": "According to the Cost of Quality curve, how does the cost of fixing a defect found in production compare to one found during requirements?",
     "options": [
-      "Üretim aşamasında bulunan hatayı düzeltmek gereksinim aşamasına göre katbekat (onlarca/yüzlerce kat) daha maliyetlidir.",
-      "İkisi arasında hiçbir maliyet farkı yoktur.",
-      "Gereksinim aşamasında hata düzeltmek üretim ortamından daha pahalıdır.",
-      "Üretimde bulunan hatalar hiçbir zaman maliyet oluşturmaz."
+      "Fixing defects in production costs significantly more than finding them in requirements.",
+      "Fixing defects in production costs the exact same as in requirements.",
+      "Finding defects in requirements is always more expensive.",
+      "Defects in production incur zero remediation cost."
     ],
     "answer": 0
   },
   {
     "id": 30,
     "chapter": 1,
-    "topic": "Test Tasarım Teknikleri",
-    "question": "Birden fazla koşulun ve iş mantığı kombinasyonlarının olduğu durumlarda en uygun test tasarım tekniği hangisidir?",
+    "topic": "Decision Tables Application",
+    "question": "When is the Decision Table technique most effective for test case design?",
     "options": [
-      "Yalnızca Sınır Değer Analizi (BVA)",
-      "Karar Tablosu Testi (Decision Table Testing)",
-      "Rastgele Veri Girişi (Monkey Testing)",
-      "Bileşen İçi Değişken Adı Analizi"
+      "When testing logic governed by multiple complex conditions and combinations of business rules.",
+      "When testing a single numeric field with no conditional dependencies.",
+      "When inspecting CSS font styling on web pages.",
+      "When measuring network latency over fiber cables."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 31,
     "chapter": 1,
     "topic": "ISO 25010 - Portability",
-    "question": "ISO/IEC 25010 standardında bir yazılımın farklı donanım, işletim sistemi veya yazılım ortamlarına aktarılabilme yeteneği hangi karakteristik ile adlandırılır?",
+    "question": "Adaptability, installability, and replaceability are sub-characteristics of which ISO/IEC 25010 quality characteristic?",
     "options": [
-      "Compatibility (Uyumluluk)",
-      "Portability (Taşınabilirlik)",
-      "Maintainability (Bakım Yapılabilirlik)",
-      "Modularity (Modülerlik)"
+      "Portability",
+      "Maintainability",
+      "Compatibility",
+      "Security"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 32,
     "chapter": 1,
-    "topic": "Gereksinim İncelemesi (Review)",
-    "question": "Bir gereksinim belgesinde yer alan 'Sistem çok hızlı ve son derece kullanıcı dostu olmalıdır' ifadesi test edilebilirlik açısından nasıl değerlendirilir?",
+    "topic": "Requirements Testability",
+    "question": "Why is the requirement 'The system must be very fast and user friendly' considered untestable?",
     "options": [
-      "Kusursuz ve net bir gereksinimdir, hemen test kodu yazılabilir.",
-      "Ölçülebilir ve doğrulanabilir kriterler (örn. yanıt süresi < 200 ms) içermediği için test edilemez (untestable / ambiguous) bir ifadedir.",
-      "Yalnızca birim testleri ile doğrudan doğrulanabilir.",
-      "Bu ifade bir fonksiyonel uygunluk standardıdır."
+      "It lacks specific, objective, and measurable criteria against which to assert pass or fail.",
+      "Fast systems cannot be evaluated using software tools.",
+      "Only developers can decide if software is fast.",
+      "The statement is written in English rather than code."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 33,
     "chapter": 1,
-    "topic": "Test Kapsamlılığı İlkesi",
-    "question": "'Her şeyi test etmek (Exhaustive Testing) imkansızdır' prensibi karşısında bir test mühendisinin izlemesi gereken en profesyonel yaklaşım nedir?",
+    "topic": "Exhaustive Testing Principle",
+    "question": "Given that exhaustive testing of all possible input combinations is practically impossible, what strategy should a test engineer employ?",
     "options": [
-      "Test yapmaktan tamamen vazgeçip yazılımı doğrudan canlıya almak.",
-      "Risk analizi, eşdeğerlik payları ve sınır değer analizi kullanarak en yüksek hata bulma olasılığına sahip temsili test senaryolarını seçmek.",
-      "Sadece geliştiricinin güvendiği tek bir senaryoyu koşturmak.",
-      "Yalnızca kullanıcı arayüzündeki renk uyumunu denetlemek."
+      "Abandon testing entirely and deploy directly to production.",
+      "Use risk analysis and systematic techniques like EP and BVA to select high-yield representative test sets.",
+      "Run only a single happy-path test case.",
+      "Execute random inputs without analyzing outcomes."
     ],
     "answer": 1
   },
   {
     "id": 34,
     "chapter": 2,
-    "topic": "Birim Testi Tanımı",
-    "question": "Birim Testi (Unit Testing) ile ilgili aşağıdakilerden hangisi temel bir kuraldır?",
+    "topic": "Unit Testing Definition",
+    "question": "What is the primary characteristic of a Unit Test?",
     "options": [
-      "Birim testleri her zaman gerçek bir veritabanına ve harici API'ye bağlı çalışmalıdır.",
-      "Birim testi, tek bir sınıfı veya fonksiyonu harici bağımlılıklarından izole ederek bağımsız olarak test eder.",
-      "Birim testleri yalnızca sistemin son kullanıcıları tarafından koşturulur.",
-      "Birim testlerinde hiçbir zaman assertion (iddia/doğrulama) kullanılmaz."
+      "It tests an entire microservice architecture connected to live cloud services.",
+      "It validates a single class, method, or function in isolation from the rest of the system.",
+      "It requires manual interaction through a graphical user interface.",
+      "It tests database query performance under multi-user load."
     ],
     "answer": 1
   },
   {
     "id": 35,
     "chapter": 2,
-    "topic": "Test Piramidi Oranları",
-    "question": "Ders slaytlarında ve test mühendisliği literatüründe kabul gören ideal Test Piramidi (Test Pyramid) oranları hangi seçenekte doğru verilmiştir?",
+    "topic": "Test Pyramid Percentages",
+    "question": "What are the recommended testing percentages in the standard Test Pyramid?",
     "options": [
-      "Birim Testleri: %10, Entegrasyon/Sistem Testleri: %20, GUI/Uçtan Uca Testler: %70",
-      "Birim Testleri: %70, Sistem/Entegrasyon Testleri: %20, GUI/Uçtan Uca Testler: %10",
-      "Birim Testleri: %33, Sistem Testleri: %33, GUI Testleri: %33",
-      "Birim Testleri: %50, Entegrasyon Testleri: %50, GUI Testleri: %0"
+      "70% Unit tests, 20% System tests, 10% GUI tests",
+      "10% Unit tests, 20% System tests, 70% GUI tests",
+      "33% Unit tests, 33% Integration tests, 33% Acceptance tests",
+      "50% Unit tests, 50% GUI tests, 0% System tests"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 36,
     "chapter": 2,
-    "topic": "Test Piramidi Mantığı",
-    "question": "Test Piramidinin tabanında neden en yüksek oranda (%70) Birim Testlerinin bulunması önerilir?",
+    "topic": "Why Unit Tests Form the Base",
+    "question": "Why should Unit Tests form the broad base (70%) of a test suite?",
     "options": [
-      "Çünkü birim testleri en pahalı ve çalışması en yavaş testlerdir.",
-      "Çünkü birim testleri milisaniyeler içinde çok hızlı çalışır, ucuzdur, hata kaynağını tam satır olarak izole eder ve regresyonu önler.",
-      "Çünkü birim testleri yazıldığında entegrasyon testlerine gerek kalmaz.",
-      "Çünkü birim testleri doğrudan tarayıcıyı ayağa kaldırır."
+      "They are slow and difficult to maintain.",
+      "They execute in milliseconds, cost little to run, isolate defects to exact lines of code, and catch regressions early.",
+      "They eliminate the need for ever running system or API tests.",
+      "They require expensive specialized third-party licenses."
     ],
     "answer": 1
   },
   {
     "id": 37,
     "chapter": 2,
-    "topic": "GUI Testlerinin Sınırları",
-    "question": "Piramidin en tepesindeki GUI / Uçtan Uca (E2E) testlerin oranının küçük (%10) tutulmasının temel sebebi nedir?",
+    "topic": "Why GUI Tests Are Limited",
+    "question": "Why are GUI tests typically limited to approximately 10% of the overall test suite?",
     "options": [
-      "Kullanıcı arayüzünün hiç test edilmek istenmemesi.",
-      "GUI testlerinin çalışmasının yavaş olması, kırılgan (brittle) yapıda olması ve bakım maliyetinin çok yüksek olması.",
-      "GUI testlerinin hiçbir geliştirici tarafından anlaşılamaması.",
-      "Tarayıcıların test çalıştırmayı desteklememesi."
+      "User interfaces never experience software bugs.",
+      "GUI tests are slow to execute, brittle against UI changes, and costly to maintain.",
+      "Web browsers prohibit automated test execution.",
+      "Developers cannot read GUI test logs."
     ],
     "answer": 1
   },
   {
     "id": 38,
     "chapter": 2,
-    "topic": "Beyaz Kutu vs Siyah Kutu",
-    "question": "Beyaz Kutu (White Box) ve Siyah Kutu (Black Box) test yaklaşımları arasındaki temel fark nedir?",
+    "topic": "White Box vs Black Box",
+    "question": "What is the key distinction between White Box and Black Box testing?",
     "options": [
-      "Beyaz kutu testinde iç kod yapısı ve mimari bilinir ve doğrudan koda bakılarak test yazılır; Siyah kutu testinde ise iç kod bilinmeden yalnızca şartname ve arayüze göre test yapılır.",
-      "Beyaz kutu testleri yalnızca manuel yapılır; siyah kutu testleri otomatiktir.",
-      "Beyaz kutu testleri sadece donanımı; siyah kutu testleri sadece yazılımı test eder.",
-      "Beyaz kutu testinde hiçbir girdi verilmez, sadece çıktılar izlenir."
+      "White Box testing examines internal logic and code structure; Black Box testing tests external behavior without internal code knowledge.",
+      "White Box testing is always manual; Black Box testing is always automated.",
+      "White Box tests only documentation; Black Box tests only hardware.",
+      "White Box testing is conducted exclusively by end users."
     ],
     "answer": 0
   },
   {
     "id": 39,
     "chapter": 2,
-    "topic": "Statik vs Dinamik Test Sınıflandırması",
-    "question": "'Kodu çalıştırıyor mu?' ve 'Kodun içine bakıyor mu?' sorularına göre yapılan test sınıflandırmasında aşağıdakilerden hangisi doğrudur?",
+    "topic": "Static vs Dynamic Testing",
+    "question": "Which criterion separates Static Testing from Dynamic Testing?",
     "options": [
-      "Kodu çalıştırmadan yapılan test Dinamik Testtir.",
-      "Kodu çalıştırarak yapılan test Dinamik Testtir; kodu çalıştırmadan inceleme yapılan test ise Statik Testtir.",
-      "Siyah kutu testinde her zaman kodun kaynak satırlarına bakılır.",
-      "Birim testleri statik test kategorisine girer."
+      "Whether the test executes the code during evaluation.",
+      "Whether the test is written in Java or C#.",
+      "Whether the test requires a database.",
+      "Whether the test runs on Windows or Linux."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 40,
     "chapter": 2,
-    "topic": "AAA Kalıbı Genel",
-    "question": "Birim testlerinde dünya standardı olan AAA kalıbının açılımı ve sırası nedir?",
+    "topic": "AAA Pattern Overview",
+    "question": "What does the AAA unit testing pattern stand for?",
     "options": [
-      "Action - Analyze - Apply",
-      "Arrange - Act - Assert",
-      "Assert - Arrange - Act",
-      "Allocate - Compute - Terminate"
+      "Allocate, Act, Assert",
+      "Arrange, Act, Assert",
+      "Assert, Action, Apply",
+      "Analyze, Adapt, Automate"
     ],
     "answer": 1
   },
   {
     "id": 41,
     "chapter": 2,
-    "topic": "AAA - Arrange Adımı",
-    "question": "AAA kalıbında 'Arrange' aşamasında gerçekleştirilen ana işlem nedir?",
+    "topic": "AAA - Arrange Phase",
+    "question": "What happens during the Arrange phase of a unit test?",
     "options": [
-      "Test edilen fonksiyonu çağırmak.",
-      "Beklenen sonuç ile gerçekleşen sonucu kıyaslamak.",
-      "Test edilecek nesneleri oluşturmak, girdileri hazırlamak ve ön koşulları (preconditions) kurmak.",
-      "Test bittikten sonra log dosyalarını temizlemek."
+      "The method under test is invoked.",
+      "Test inputs are prepared, objects are initialized, and preconditions are established.",
+      "Actual results are compared against expected outcomes.",
+      "Test output logs are permanently deleted."
     ],
-    "answer": 2
+    "answer": 1
   },
   {
     "id": 42,
     "chapter": 2,
-    "topic": "AAA - Act Adımı",
-    "question": "AAA kalıbında 'Act' aşamasında gerçekleştirilen ana işlem nedir?",
+    "topic": "AAA - Act Phase",
+    "question": "What is the primary action in the Act phase of a unit test?",
     "options": [
-      "Test senaryosunun beklenen çıktısını belirlemek.",
-      "Test edilen davranışı / hedef metodu çağırmak ve sonucu elde etmek.",
-      "Veritabanı bağlantılarını yapılandırmak.",
-      "Test raporunu e-posta ile göndermek."
-    ],
-    "answer": 1
-  },
-  {
-    "id": 43,
-    "chapter": 2,
-    "topic": "AAA - Assert Adımı",
-    "question": "AAA kalıbında 'Assert' aşamasının birim testindeki temel fonksiyonu nedir?",
-    "options": [
-      "Elde edilen gerçek çıktının (actual), şartnamenin gerektirdiği beklenen sonuçla (expected) eşleştiğini doğrulamak.",
-      "Yazılan kodun derlenip derlenmediğini kontrol etmek.",
-      "Kullanıcıya bildirim penceresi göstermek.",
-      "Test edilen metodu sonsuz döngüye sokmak."
+      "Invoking the specific function or method whose behavior is being evaluated.",
+      "Configuring dependency injection containers.",
+      "Checking whether variables match expected values.",
+      "Resetting the operating system clock."
     ],
     "answer": 0
   },
   {
-    "id": 44,
+    "id": 43,
     "chapter": 2,
-    "topic": "Assertion Rolü",
-    "question": "Ders slaytlarına göre: 'Assertions replace us humans in checking that the software does what it should.' ifadesinin anlamı nedir?",
+    "topic": "AAA - Assert Phase",
+    "question": "What is the role of the Assert phase in a unit test?",
     "options": [
-      "Yazılımcıların yerini yapay zekanın almasıdır.",
-      "İddialar (assertions), yazılımın beklenen davranışı sergileyip sergilemediğini manuel insan gözü yerine otomatik olarak denetler.",
-      "Assertion yazmak insan hatalarını tamamen ortadan kaldırır.",
-      "Assertion olmadan da otomatik testler hata yakalayabilir."
+      "Setting up fake mock data.",
+      "Verifying that the actual result produced by the code matches the expected specification.",
+      "Compiling the test suite into machine code.",
+      "Invoking the database migration script."
     ],
     "answer": 1
+  },
+  {
+    "id": 44,
+    "chapter": 2,
+    "topic": "Role of Assertions",
+    "question": "According to the lecture slides, how do assertions serve testing?",
+    "options": [
+      "Assertions replace human reviewers in checking that software behaves as specified.",
+      "Assertions make source code run faster.",
+      "Assertions remove the need for unit test runners.",
+      "Assertions automatically generate missing source code."
+    ],
+    "answer": 0
   },
   {
     "id": 45,
     "chapter": 2,
-    "topic": "Birim Test Çatıları: JUnit ve NUnit",
-    "question": "Java dünyasında JUnit ne anlama geliyorsa, .NET / C# dünyasında karşılığı olan popüler açık kaynaklı test çatısı hangisidir?",
+    "topic": "JUnit vs NUnit",
+    "question": "Which popular open-source testing framework serves the .NET ecosystem similarly to how JUnit serves Java?",
     "options": [
-      "PyTest",
       "NUnit",
+      "PyTest",
       "Mocha",
-      "Selenium"
+      "RSpec"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 46,
     "chapter": 2,
-    "topic": "Test Fikstürleri - SetUp",
-    "question": "JUnit'teki `@BeforeEach` veya NUnit'teki `[SetUp]` etiketinin temel görevi nedir?",
+    "topic": "Test Fixtures - SetUp",
+    "question": "What is the role of a SetUp fixture such as BeforeEach or [SetUp] in a test suite?",
     "options": [
-      "Test sınıfı çalışmadan önce tüm testleri kalıcı olarak silmek.",
-      "Her bir test metodundan önce çalışarak test ortamını ve ortak nesneleri taze (fresh) bir başlangıç durumuna getirmek.",
-      "Yalnızca başarısız olan testlerin ardından çalışmak.",
-      "Testleri paralel olarak sunucuya dağıtmak."
+      "Running once after all test classes finish.",
+      "Executing prior to each test method to establish a clean and isolated starting state.",
+      "Ignoring failing assertions automatically.",
+      "Encrypting source code files on disk."
     ],
     "answer": 1
   },
   {
     "id": 47,
     "chapter": 2,
-    "topic": "Test Fikstürleri - TearDown",
-    "question": "JUnit'teki `@AfterEach` veya NUnit'teki `[TearDown]` etiketinin ana kullanım amacı nedir?",
+    "topic": "Test Fixtures - TearDown",
+    "question": "What is the purpose of a TearDown fixture such as AfterEach or [TearDown]?",
     "options": [
-      "Her test metodundan sonra çalışarak açık kaynakları, geçici dosyaları veya bellek durumunu temizlemek (cleanup).",
-      "Test senaryolarının kodunu yeniden yazmak.",
-      "Tüm testleri otomatik olarak başarılı saymak.",
-      "Geliştiriciye bir sonraki görevi atamak."
+      "Cleaning up allocated resources, closing files, and resetting state after each test executes.",
+      "Creating new database records before testing begins.",
+      "Forcing all tests to pass unconditionally.",
+      "Printing source code line numbers."
     ],
     "answer": 0
   },
   {
     "id": 48,
     "chapter": 2,
-    "topic": "BankAccount Örneği - Pozitif Senaryo",
-    "question": "Bir `BankAccount` sınıfında başlangıç bakiyesi 100 TL iken `account.deposit(50)` çağrılıyor. Doğru assert ifadesi hangisidir?",
+    "topic": "BankAccount Deposit Example",
+    "question": "In a BankAccount class with an initial balance of 100, deposit(50) is called. Which assertion validates correct behavior?",
     "options": [
       "assertEquals(100, account.getBalance());",
       "assertEquals(150, account.getBalance());",
@@ -631,411 +631,411 @@ const QUESTIONS = [
   {
     "id": 49,
     "chapter": 2,
-    "topic": "BankAccount Örneği - İstisna (Exception) Testi",
-    "question": "Bir banka hesabı metodunda `account.withdraw(-50)` gibi negatif bir miktar çekilmeye çalışıldığında veya bakiye yetersiz olduğunda ne doğrulanmalıdır?",
+    "topic": "BankAccount Exception Handling",
+    "question": "When withdraw(-50) is called on a bank account with negative input, what should the unit test assert?",
     "options": [
-      "İşlemin sessizce geçiştirilip bakiyenin sıfırlanması.",
-      "Metodun beklenen bir istisna (örn. `ArgumentOutOfRangeException` veya `IllegalArgumentException`) fırlattığının assert edilmesi.",
-      "Paranın negatif olarak hesaba eklenmesi.",
-      "Testin otomatik olarak iptal edilmesi."
+      "The balance becomes zero.",
+      "The method throws an ArgumentOutOfRangeException or IllegalArgumentException.",
+      "The operation silently completes without error.",
+      "The method prints an error message to standard output."
     ],
     "answer": 1
   },
   {
     "id": 50,
     "chapter": 2,
-    "topic": "Birim Testinin Avantajları",
-    "question": "Aşağıdakilerden hangisi birim testlerinin yazılım geliştirme sürecine sağladığı doğrudan avantajlardan biridir?",
+    "topic": "CreditCard Limit Validation",
+    "question": "When a credit card purchase exceeds the available credit limit, what behavior should the unit test verify?",
     "options": [
-      "Sistemdeki tüm donanım arızalarını önceden haber vermesi.",
-      "Yeniden yapılandırma (refactoring) sırasında mevcut davranışın bozulmadığına dair güvenli bir emniyet ağı (safety net) sağlaması.",
-      "Kullanıcı kabul testlerine olan ihtiyacı tamamen ortadan kaldırması.",
-      "Veritabanı sunucusunun hızını iki katına çıkarması."
+      "The transaction is declined and available credit remains unchanged.",
+      "The credit limit is automatically doubled.",
+      "The card object is deleted from memory.",
+      "The transaction succeeds with negative balance."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 51,
     "chapter": 2,
-    "topic": "Birim Testi ve Regresyon",
-    "question": "Yazılıma yeni bir özellik eklendiğinde eski özelliklerin bozulmadığını kontrol etmeye ne ad verilir ve birim testleri burada nasıl bir rol oynar?",
+    "topic": "Benefits - Refactoring Safety Net",
+    "question": "How does a comprehensive unit test suite benefit developers during code refactoring?",
     "options": [
-      "Yük testi - Birim testleri sistemi aşırı yükler.",
-      "Regresyon Testi - Birim testleri her derlemede otomatik koşularak regresyonları anında yakalar.",
-      "Kullanılabilirlik testi - Birim testleri ekran tasarımlarını denetler.",
-      "Statik analiz - Birim testleri sadece kod sözdizimini kontrol eder."
+      "It acts as a safety net ensuring that internal code restructuring does not break existing functional behavior.",
+      "It prevents developers from modifying source files.",
+      "It converts synchronous code into multithreaded code automatically.",
+      "It reduces the size of compiled binary executables."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 52,
     "chapter": 2,
-    "topic": "Birim Testinin Sınırları - Geliştirici Bağımlılığı",
-    "question": "Ders slaytlarında birim testlerinin bir dezavantajı olarak belirtilen 'Dependence on Developers' neyi ifade eder?",
+    "topic": "Benefits - Rapid Feedback",
+    "question": "What development advantage does immediate unit test execution offer?",
     "options": [
-      "Birim testlerinin kalitesinin, testi yazan geliştiricinin yetkinliğine, dikkatine ve kapsamlı senaryo tasarlama becerisine bağımlı olmasını.",
-      "Geliştiricilerin test yazarken yöneticiden izin almak zorunda olmasını.",
-      "Testlerin sadece tek bir geliştiricinin bilgisayarında çalışabilmesini.",
-      "Geliştirici işten ayrılınca testlerin otomatik olarak silinmesini."
+      "Immediate feedback on whether recent changes introduced regressions.",
+      "Instant deployment to public app stores.",
+      "Elimination of all software documentation needs.",
+      "Automatic database schema indexing."
     ],
     "answer": 0
   },
   {
     "id": 53,
     "chapter": 2,
-    "topic": "Birim Testinin Sınırları - Etkileşimler",
-    "question": "Birim testleri mükemmel şekilde geçen iki farklı sınıf (Unit) bir araya geldiğinde sistem neden hala hata verebilir?",
+    "topic": "Disadvantages - Developer Dependence",
+    "question": "Why is 'Dependence on Developers' considered a potential challenge in unit testing?",
     "options": [
-      "Çünkü birim testleri tek tek sınıfları izole test eder; sınıflar arasındaki arayüz, protokol ve veri formatı uyuşmazlıklarını (etkileşimleri) yakalayamaz.",
-      "Çünkü birim testleri her zaman hatalı sonuç üretir.",
-      "Çünkü işlemci birim testlerinden sonra yorulur.",
-      "Çünkü derleyici sınıfları birleştirmeyi reddeder."
+      "The effectiveness of unit tests depends heavily on the developers' discipline, diligence, and test design skill.",
+      "Developers cannot run tests without external managers.",
+      "Test frameworks require developers to pay per execution.",
+      "Only junior developers are permitted to write test code."
     ],
     "answer": 0
   },
   {
     "id": 54,
     "chapter": 2,
-    "topic": "Birim Testinin Sınırları - Arayüz (UI)",
-    "question": "Ders slaytlarında belirtildiği üzere, birim testleri neden Kullanıcı Arayüzü (User Interface - UI) testi için uygun değildir?",
+    "topic": "Disadvantages - Component Interactions",
+    "question": "Why can a system still fail even when 100% of its unit tests pass with flying colors?",
     "options": [
-      "Çünkü UI kodu derlenmez.",
-      "Çünkü birim testleri tekil mantıksal birimlerin işlevine odaklanır; ekran öğelerinin görsel yerleşimi, css stilleri ve kullanıcı deneyimi için yetersiz kalır.",
-      "Çünkü birim testleri yalnızca C dilinde yazılır.",
-      "Çünkü tarayıcılar birim testlerini güvenlik gerekçesiyle engeller."
+      "Unit tests focus on units in isolation and cannot detect interface defects or protocol mismatches between collaborating components.",
+      "Unit tests are executed in backwards order by compilers.",
+      "Processors lose accuracy after executing unit tests.",
+      "Unit test assertions are ignored in production."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 55,
     "chapter": 2,
-    "topic": "Aşırı Otomasyona Güven (False Sense of Security)",
-    "question": "Ders notlarında yer alan 'Over-reliance on Automation' (Otomasyona Aşırı Güven) uyarısı neyi vurgulamaktadır?",
+    "topic": "Disadvantages - UI Limitations",
+    "question": "Why is unit testing generally unsuitable for testing User Interfaces?",
     "options": [
-      "Tüm otomatik testlerin geçmesinin sistemde hiçbir hata veya tasarım açığı kalmadığı anlamına gelmeyeceğini, sahte bir güvenlik hissi yaratabileceğini.",
-      "Otomatik testlerin asla çalıştırılmaması gerektiğini.",
-      "Test otomasyonunun manuel testten her zaman daha ucuz olduğunu.",
-      "Yalnızca tek bir test otomasyon aracının kullanılması gerektiğini."
+      "UI layouts, visual styling, and user experiences require visual and workflow validation that isolated unit tests do not provide.",
+      "Web browsers refuse to load code that has unit tests.",
+      "Unit testing libraries can only evaluate numerical variables.",
+      "CSS styles cannot be compiled."
     ],
     "answer": 0
   },
   {
     "id": 56,
     "chapter": 2,
-    "topic": "Bakım Yükü (Maintenance Overhead)",
-    "question": "Yazılım mimarisi değiştikçe birim testlerinin karşılaştığı 'Maintenance Overhead' durumu nedir?",
+    "topic": "False Sense of Security",
+    "question": "What risk is described by 'Over-reliance on Automation' in the lecture slides?",
     "options": [
-      "Testlerin sunucuda çok fazla disk alanı kaplaması.",
-      "Üretim kodu geliştikçe ve gereksinimler değiştikçe, test senaryolarının da sürekli güncellenmesi ve bakımının yapılması gerekmesi.",
-      "Testlerin her ay yeniden satın alınmasının gerekmesi.",
-      "Test kodlarının sadece eski işletim sistemlerinde çalışması."
+      "A false sense of security where passing tests lead teams to overlook missing scenarios or unverified system integrations.",
+      "Automated tests causing physical wear on server hard drives.",
+      "Compilers rejecting automated test scripts.",
+      "Automated tests running too quickly to be trusted."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 57,
     "chapter": 2,
-    "topic": "Manuel Birim Testinin Sorunları",
-    "question": "Manuel birim testinin günümüz modern yazılım mühendisliğinde tercih edilmemesinin temel nedenleri nelerdir?",
+    "topic": "Maintenance Overhead",
+    "question": "What is meant by the 'Maintenance Overhead' of a unit test suite?",
     "options": [
-      "Çok zaman alması, her kod değişiminde tekrarlanmasının maliyetli olması, insan hatasına açık olması ve bileşen izolasyonunun zorluğu.",
-      "Geliştiricilerin klavye kullanmasını yasaklaması.",
-      "İnternet bağlantısı olmadan yapılamaması.",
-      "Yalnızca süper bilgisayarlarda çalışabilmesi."
+      "As application requirements evolve, test suites must be continuously maintained, updated, and refactored alongside production code.",
+      "Test servers needing periodic physical oiling.",
+      "Monthly recurring subscription fees for open-source frameworks.",
+      "The memory consumed by deleting unused test files."
     ],
     "answer": 0
   },
   {
     "id": 58,
     "chapter": 2,
-    "topic": "TDD Felsefesi Giriş",
-    "question": "Test Odaklı Geliştirme (TDD) yaklaşımının merkezindeki temel prensip hangisidir?",
+    "topic": "Manual vs Automated Unit Testing",
+    "question": "Why is manual unit testing rarely practiced in modern software engineering?",
     "options": [
-      "Kodu yazıp bitirdikten 3 ay sonra test senaryosu hazırlamak.",
-      "Üretim kodunu yazmadan önce başarısız olacak testi yazmak (Test-First).",
-      "Yalnızca müşteri şikayet ettiğinde test yazmak.",
-      "Test yazımını stajyerlere devretmek."
+      "It is time-consuming, expensive to repeat on every change, error-prone, and difficult to isolate individual units consistently.",
+      "Operating systems prohibit developers from testing by hand.",
+      "Manual tests cannot be printed on paper.",
+      "Developers lack the tools to run code manually."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 59,
     "chapter": 2,
-    "topic": "CI/CD ve Birim Testleri",
-    "question": "DevOps ve CI/CD süreçlerinde birim testlerinin her kod 'push' veya 'pull request' işleminde otomatik koşulmasının amacı nedir?",
+    "topic": "Test-First Development",
+    "question": "What is the development philosophy regarding test timing advocated in the slides?",
     "options": [
-      "Geliştiricilerin bilgisayarını kilitlemek.",
-      "Kod değişikliklerinin mevcut sistemi bozup bozmadığını saniyeler içinde doğrulayarak hatalı kodun ana dala (main branch) girmesini engellemek.",
-      "Sunucu faturalarını artırmak.",
-      "Kullanıcıya her dakika e-posta göndermek."
+      "Develop tests in parallel with application code or before.",
+      "Write tests only after software has been deployed to users for several months.",
+      "Write tests only when a critical production bug is reported.",
+      "Never write tests before code architecture is finalized."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 60,
     "chapter": 2,
-    "topic": "Hata Terminolojisi: Error (Mistake)",
-    "question": "Yazılım mühendisliği terminolojisinde 'Error' (Hata/Yanılgı) kavramı neyi ifade eder?",
+    "topic": "Testing After Code Completion",
+    "question": "When developers do not use TDD, when are unit tests typically created?",
     "options": [
-      "Sistemin kullanıcıya yanlış bakiye göstermesi olayını.",
-      "Bir yazılımcının gereksinimi yanlış anlaması veya yanlış kod yazması gibi insanın yaptığı yanlış eylemi.",
-      "Diskin fiziksel olarak bozulmasını.",
-      "Veritabanı tablosundaki satır sayısını."
+      "Immediately after completing a specific block, class, or method of code.",
+      "One year after product launch.",
+      "Only when the client conducts a financial audit.",
+      "Never, because post-code testing is prohibited."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 61,
     "chapter": 2,
-    "topic": "Hata Terminolojisi: Fault (Defect/Bug)",
-    "question": "Yazılım kaynak kodunda veya bir dokümanda yer alan kusura / hataya (örn. `i <= n` yerine yanlışlıkla `i < n` yazılmasına) ne ad verilir?",
+    "topic": "CI/CD and Unit Testing",
+    "question": "What is the primary role of automated unit testing within a CI/CD pipeline?",
     "options": [
-      "Failure",
-      "Fault (Defect / Bug)",
-      "Error",
-      "Incident"
+      "To automatically run on every code push and pull request, preventing regressions from merging into the main branch.",
+      "To generate marketing documentation for sales teams.",
+      "To slow down deployments so managers can review code line-by-line.",
+      "To encrypt source code repositories."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 62,
     "chapter": 2,
-    "topic": "Hata Terminolojisi: Failure (Başarısızlık)",
-    "question": "Bir program çalışırken beklenen davranışından saptığında ve kullanıcıya yanlış sonuç gösterdiğinde (veya çöktüğünde) ortaya çıkan duruma ne ad verilir?",
+    "topic": "Terminology - Error",
+    "question": "In software testing terminology, what is an 'Error'?",
     "options": [
-      "Error",
-      "Failure (Başarısızlık)",
-      "Fault",
-      "Mistake"
+      "A human action that produces an incorrect result or mistake.",
+      "A visible crash on a user's smartphone.",
+      "A physical power failure in a data center.",
+      "An expired software license."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 63,
     "chapter": 2,
-    "topic": "Error - Fault - Failure İlişkisi",
-    "question": "İnsan, kod ve sistem çıktısı ekseninde Error, Fault ve Failure arasındaki neden-sonuç zinciri hangi seçenekte doğru sıralanmıştır?",
+    "topic": "Terminology - Fault",
+    "question": "In software engineering, what is a 'Fault' (Defect or Bug)?",
     "options": [
-      "Failure → Fault → Error",
-      "Error (İnsan hatası) → Fault (Koddaki kusur/bug) → Failure (Sistemin yanlış çıktısı/çökmesi)",
-      "Fault → Error → Failure",
-      "Failure → Error → Fault"
+      "An imperfection or flaw in a software work product, such as an incorrect line of code or logic omission.",
+      "A customer complaint submitted via telephone.",
+      "A human being who makes mistakes.",
+      "A server that runs out of disk storage."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 64,
     "chapter": 2,
-    "topic": "Birim Testi Kapsamı (Scope)",
-    "question": "Bir birim testinin kapsamı (Scope) tanımlanırken aşağıdakilerden hangisi bir 'Unit' (Birim) olarak kabul edilebilir?",
+    "topic": "Terminology - Failure",
+    "question": "What is a 'Failure' in software testing terminology?",
     "options": [
-      "Tek bir fonksiyon, tek bir metot veya tek bir sınıf",
-      "Tüm mikroservis kümesi ve Kubernetes podları",
-      "Şirketin tüm ERP veritabanı",
-      "Kullanıcının ödeme yaptığı harici banka gateway sistemi"
+      "An event in which a component or system deviates from delivering its expected external service or output.",
+      "A typographical mistake made by a programmer in their notes.",
+      "A comment written inside a unit test.",
+      "A code review meeting that finishes early."
     ],
     "answer": 0
   },
   {
     "id": 65,
     "chapter": 2,
-    "topic": "İdeal Birim Testinin Özellikleri",
-    "question": "Aşağıdakilerden hangisi kaliteli bir birim testinin taşıması gereken özelliklerden (Fast, Isolated, Repeatable) biri DEĞİLDİR?",
+    "topic": "Error - Fault - Failure Chain",
+    "question": "What is the standard causal relationship among Error, Fault, and Failure?",
     "options": [
-      "Hızlı çalışması (milisaniyeler seviyesinde)",
-      "Tekrarlanabilir olması (aynı girdiyle her zaman aynı sonucu vermesi)",
-      "Başka testlerin çalışma sırasına ve veritabanı durumuna sıkı sıkıya bağımlı olması",
-      "Açık ve anlaşılır bir AAA yapısına sahip olması"
+      "Human Error causes a Fault in code, which when executed causes an observable Failure.",
+      "A Failure causes an Error, which leads to a Fault.",
+      "A Fault creates an Error, which produces a Failure.",
+      "Failure and Error are identical, and Fault is unrelated."
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "id": 66,
     "chapter": 2,
-    "topic": "Test Odaklı Geliştirme Zamanlaması",
-    "question": "Ders slaytlarındaki geliştirme felsefesine göre, testlerin yazılım koduna kıyasla geliştirilme zamanı nasıl olmalıdır?",
+    "topic": "Definition of a Unit",
+    "question": "Which of the following best fits the definition of a 'Unit' in unit testing?",
     "options": [
-      "Yazılım canlıya çıktıktan en az 6 ay sonra yazılmalıdır.",
-      "Uygulama koduyla paralel olarak veya KODDAN ÖNCE (in parallel with application code or before) geliştirilmelidir.",
-      "Sadece ürün sahibi onay verirse yazılmalıdır.",
-      "Yalnızca haftasonları gece saatlerinde yazılmalıdır."
+      "An individual function, method, or class.",
+      "A distributed Kubernetes cluster.",
+      "An enterprise wide-area network.",
+      "A third-party payment processing gateway."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 67,
     "chapter": 3,
-    "topic": "İleri Düzey Birim Testi Amacı",
-    "question": "İleri Düzey Birim Testi (Advanced Unit Testing) anlayışında testlerin temel rolü nasıl tanımlanır?",
+    "topic": "Why Advanced Unit Testing",
+    "question": "How does Advanced Unit Testing transform the role of tests in software engineering?",
     "options": [
-      "Yalnızca hata yakalayan bir güvenlik ağı (bug net) olmaktan çıkıp, yazılım mimarisini ve kod tasarımını şekillendiren bir araç (design tool) haline gelmesidir.",
-      "Testlerin tamamen manuel ekibe devredilmesidir.",
-      "Tüm projenin tek bir devasa fonksiyon içinde test edilmesidir.",
-      "Yalnızca donanım çiplerinin voltaj değerlerini ölçmesidir."
+      "It turns tests into a design-shaping tool rather than just a defect net, enabling safe refactoring and continuous integration.",
+      "It replaces all manual testing by automating user acceptance interviews.",
+      "It forces developers to write all application logic in a single monolithic class.",
+      "It eliminates the need for software version control systems."
     ],
     "answer": 0
   },
   {
     "id": 68,
     "chapter": 3,
-    "topic": "TDD Döngüsü",
-    "question": "Test Odaklı Geliştirme (TDD) yaklaşımının ünlü döngüsü hangi sırayla gerçekleşir?",
+    "topic": "TDD Core Cycle",
+    "question": "What is the canonical cycle of Test-Driven Development (TDD)?",
     "options": [
-      "Refactor → Red → Green",
-      "Red → Green → Refactor",
-      "Green → Red → Refactor",
-      "Code → Test → Deploy"
+      "Refactor -> Red -> Green",
+      "Red -> Green -> Refactor",
+      "Green -> Red -> Refactor",
+      "Code -> Test -> Deploy"
     ],
     "answer": 1
   },
   {
     "id": 69,
     "chapter": 3,
-    "topic": "TDD - RED Aşaması",
-    "question": "TDD'nin 'RED' aşamasında geliştirici tam olarak ne yapar?",
+    "topic": "TDD - RED Phase",
+    "question": "What action defines the RED phase in TDD?",
     "options": [
-      "Tüm kodu bitirip hata veren satırları kırmızıyla boyar.",
-      "Henüz yazılmamış küçük bir işlev/davranış için başarısız olan (failing) minimal bir test yazar.",
-      "Kod tabanındaki tüm sınıfları siler.",
-      "Sunucuya acil durum sinyali gönderir."
+      "Writing a minimal failing test for a small desired behavior before writing the production code.",
+      "Marking broken code comments in red text.",
+      "Shutting down the CI/CD pipeline.",
+      "Deleting existing passing tests."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 70,
     "chapter": 3,
-    "topic": "TDD - GREEN Aşaması",
-    "question": "TDD'nin 'GREEN' aşamasındaki temel prensip nedir?",
+    "topic": "TDD - GREEN Phase",
+    "question": "What is the primary goal of the GREEN phase in TDD?",
     "options": [
-      "Yazılan başarısız testi geçirecek en az ve minimal kodu (minimal code) yazarak testi başarıya ulaştırmak.",
-      "Sistemin tüm gelecekteki özelliklerini aynı anda kodlamak.",
-      "Kodu çalıştırmadan test kodunu silmek.",
-      "Testin assertion satırını yorum satırı haline getirmek."
+      "Writing the minimal production code necessary to make the failing test pass.",
+      "Implementing all future project features in one session.",
+      "Removing assertion statements from the test suite.",
+      "Refactoring code architecture without running tests."
     ],
     "answer": 0
   },
   {
     "id": 71,
     "chapter": 3,
-    "topic": "TDD - REFACTOR Aşaması",
-    "question": "TDD'nin 'REFACTOR' aşamasında ne amaçlanır ve testler burada nasıl bir rol oynar?",
+    "topic": "TDD - REFACTOR Phase",
+    "question": "What is the objective of the REFACTOR phase in TDD?",
     "options": [
-      "Sistemin dış davranışını tamamen değiştirmek.",
-      "Tüm testler yeşil durumdayken, testlerin sağladığı güvenlik ağı altında kodun tasarımını temizlemek, tekrarları gidermek ve okunabilirliği artırmak.",
-      "Bozuk olan testleri düzeltmek.",
-      "Yeni bir test ekleyerek sistemi kırmızıya döndürmek."
+      "Cleaning up design, removing duplication, and improving cohesion while using tests as a safety net.",
+      "Changing the external behavior of the application.",
+      "Rewriting tests to match incorrect program outputs.",
+      "Adding completely new features without writing new tests."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 72,
     "chapter": 3,
-    "topic": "TDD Döngü Süresi",
-    "question": "Ders slaytlarına göre TDD döngülerinin (Red-Green-Refactor) ideal süresi ne kadar olmalıdır?",
+    "topic": "TDD Cycle Duration",
+    "question": "According to TDD best practices, what is the ideal duration for an individual Red-Green-Refactor cycle?",
     "options": [
-      "2 - 10 dakikalık kısa ve odaklanmış adımlar",
-      "2 - 3 haftalık uzun sprintler",
-      "Günde yalnızca bir kez (24 saat)",
-      "En az 6 saat kesintisiz"
+      "Short iterations of 2 to 10 minutes",
+      "Multi-week sprints",
+      "Once every 24 hours",
+      "At least 6 continuous hours"
     ],
     "answer": 0
   },
   {
     "id": 73,
     "chapter": 3,
-    "topic": "TDD Ne Değildir?",
-    "question": "Aşağıdakilerden hangisi ders slaytlarında vurgulanan 'What TDD Is Not' (TDD Ne Değildir) maddelerinden biridir?",
+    "topic": "What TDD Is Not",
+    "question": "Which of the following is emphasized in the slides as 'What TDD Is Not'?",
     "options": [
-      "TDD, kodu yazdıktan sonra test yazmak (tests after coding) değildir.",
-      "TDD, baştan sona devasa mimari tasarımı önceden yapma (big upfront design) töreni değildir.",
-      "TDD, uçtan uca (E2E) veya entegrasyon testlerinin alternatifi veya ikamesi değildir.",
-      "Yukarıdakilerin hepsi"
+      "It is not writing tests after implementation code.",
+      "It is not a big upfront design ceremony.",
+      "It is not an end-to-end testing replacement.",
+      "All of the above"
     ],
     "answer": 3
   },
   {
     "id": 74,
     "chapter": 3,
-    "topic": "TDD Faydaları - Tasarım",
-    "question": "TDD ile geliştirilen bir kod tabanında mimari ve tasarım açısından en sık gözlenen olumlu etki nedir?",
+    "topic": "Benefits of TDD - Architecture",
+    "question": "What architectural characteristics typically emerge when following TDD?",
     "options": [
-      "Monolitik ve aşırı bağımlı (tightly coupled) spagetti kod oluşması.",
-      "Yüksek kohezyon (cohesion), düşük kuplaj (coupling) ve kendiliğinden gelişen modüler tasarım (emergent design).",
-      "Sınıfların hiçbir arayüz (interface) kullanmaması.",
-      "Her sınıfın binlerce satırdan oluşması."
+      "Tightly coupled monolithic spaghetti code.",
+      "High cohesion, low coupling, decoupled modules, and emergent design.",
+      "Absence of interfaces and abstraction boundaries.",
+      "Large methods exceeding hundreds of lines."
     ],
     "answer": 1
   },
   {
     "id": 75,
     "chapter": 3,
-    "topic": "TDD Faydaları - Yaşayan Dokümantasyon",
-    "question": "TDD ile yazılmış birim testlerin 'Self-documenting examples / Living documentation' (Yaşayan Doküman) olarak adlandırılmasının sebebi nedir?",
+    "topic": "Living Documentation",
+    "question": "Why are TDD unit test suites described as 'Living Documentation'?",
     "options": [
-      "Testlerin bir Word dosyasına otomatik dönüştürülmesi.",
-      "Testlerin sistemin nasıl çalışması gerektiğini gösteren, kodla senkronize ve her zaman güncel kalan çalışan örnekler olması.",
-      "Test kodlarının sadece yöneticiler tarafından okunması.",
-      "Testlerin her hafta yeniden yazılmak zorunda olması."
+      "They serve as executable specifications and real code examples that stay continuously updated with software behavior.",
+      "They automatically print PDF manuals for non-technical users.",
+      "They can be edited without checking code into version control.",
+      "They are maintained by technical writers rather than programmers."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 76,
     "chapter": 3,
-    "topic": "TDD Tuzakları - Brittle Tests",
-    "question": "TDD uygulanırken yapılan en büyük hatalardan biri olan 'Over-specifying internals' (iç detayları aşırı belirleme) neye yol açar?",
+    "topic": "Pitfalls - Over-specifying Internals",
+    "question": "What problem arises when unit tests over-specify internal implementation details rather than observable behavior?",
     "options": [
-      "Testlerin gereksiz yere kırılgan (brittle/fragile) hale gelmesine ve iç mantıkta yapılan en ufak refactor işleminde bozulmasına.",
-      "Kodun derlenememesine.",
-      "Tüm testlerin hızının artmasına.",
-      "Sistemin internet erişiminin kesilmesine."
+      "Tests become brittle and break on harmless internal refactorings, despite correct functional behavior.",
+      "Compilation speed improves drastically.",
+      "Tests consume zero CPU memory.",
+      "Code coverage automatically drops to zero."
     ],
     "answer": 0
   },
   {
     "id": 77,
     "chapter": 3,
-    "topic": "Test Tiyatrosu (Test Theater)",
-    "question": "Ders slaytlarında geçen 'Test Theater' (Test Tiyatrosu) terimi ne anlama gelmektedir?",
+    "topic": "Test Theater",
+    "question": "What does the term 'Test Theater' describe in testing culture?",
     "options": [
-      "Test mühendislerinin tiyatro oyunu sahnelemesi.",
-      "Yüksek kod kapsama yüzdesi gösteren ancak gerçekte anlamlı assertion içermeyen ve hiçbir gerçek hatayı yakalamayan sahte testler.",
-      "Yalnızca görsel arayüzü olan test otomasyon araçları.",
-      "Geliştiricilerin canlı yayında test koşması."
+      "Achieving high test coverage percentages through superficial tests that assert little and provide minimal fault-detection value.",
+      "Rehearsing software demonstrations in an auditorium.",
+      "Testing video streaming platforms.",
+      "Conducting live-streamed code reviews."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 78,
     "chapter": 3,
-    "topic": "Test Edilebilirlik Tasarımı",
-    "question": "Bir kod tabanının kolay test edilebilir (Design for Testability) olması için aşağıdakilerden hangisi önerilir?",
+    "topic": "Designing for Testability",
+    "question": "Which architectural practice promotes software testability?",
     "options": [
-      "Küresel değişkenler (global state) ve statik tekiller (static singletons) kullanmak.",
-      "Bağımlılıkların Tersine Çevrilmesi (Dependency Inversion), arayüzler (interfaces) ve saf fonksiyonlar kullanmak.",
-      "Tüm metotları 'private' yapıp dışarıdan erişimi tamamen engellemek.",
-      "Tüm veritabanı sorgularını doğrudan UI butonlarının içine gömmek."
+      "Heavy reliance on global mutable state and static singletons.",
+      "Dependency Inversion, clear interfaces, pure functions, and well-defined substitution seams.",
+      "Making all internal class members private with zero injection points.",
+      "Hardcoding database connection strings directly inside UI classes."
     ],
     "answer": 1
   },
   {
     "id": 79,
     "chapter": 3,
-    "topic": "Test Dublörleri Taksonomisi",
-    "question": "Gerard Meszaros tarafından tanımlanan ve ders slaytlarında yer alan 'Test Doubles' (Test Dublörleri) ailesinde kaç temel dublör türü bulunur?",
+    "topic": "Test Doubles Taxonomy",
+    "question": "How many primary categories of Test Doubles are defined in Gerard Meszaros's taxonomy?",
     "options": [
-      "2 tür (Mock ve Stub)",
-      "3 tür (Unit, Integration, System)",
-      "5 tür (Dummy, Stub, Fake, Spy, Mock)",
-      "7 tür (White, Black, Gray, Static, Dynamic, Smoke, Sanity)"
+      "2",
+      "3",
+      "5 (Dummy, Stub, Fake, Spy, Mock)",
+      "7"
     ],
     "answer": 2
   },
   {
     "id": 80,
     "chapter": 3,
-    "topic": "Test Dublörleri - Dummy",
-    "question": "Bir test metoduna yalnızca parametre listesini doldurmak için iletilen, ancak test akışında ASLA çağrılmayan ve kullanılmayan dublör hangisidir?",
+    "topic": "Test Doubles - Dummy",
+    "question": "Which test double is passed to a method solely to satisfy parameter requirements and is never actually invoked?",
     "options": [
       "Dummy",
       "Mock",
@@ -1047,21 +1047,21 @@ const QUESTIONS = [
   {
     "id": 81,
     "chapter": 3,
-    "topic": "Test Dublörleri - Stub",
-    "question": "Test sırasında yapılan çağrılara önceden hazırlanmış sabit değerler (canned values/responses) döndüren ve test edilen koda dolaylı girdi sağlayan dublör hangisidir?",
+    "topic": "Test Doubles - Stub",
+    "question": "Which test double provides canned responses to method calls made during a test to supply indirect inputs?",
     "options": [
-      "Dummy",
       "Stub",
+      "Dummy",
       "Spy",
       "Mock"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 82,
     "chapter": 3,
-    "topic": "Test Dublörleri - Fake",
-    "question": "Gerçekten çalışan bir iş mantığına sahip olan ancak üretim (production) için uygun olmayan basitleştirilmiş bir uygulama (örneğin: In-memory Veritabanı) hangi dublör türüdür?",
+    "topic": "Test Doubles - Fake",
+    "question": "Which test double contains a working implementation that takes shortcuts, making it unsuitable for production (e.g., an in-memory database)?",
     "options": [
       "Fake",
       "Stub",
@@ -1073,21 +1073,21 @@ const QUESTIONS = [
   {
     "id": 83,
     "chapter": 3,
-    "topic": "Test Dublörleri - Spy",
-    "question": "Gerçek bir nesneyi veya stub'ı sarmalayarak, kendisine hangi metotların kaç kez çağrıldığını ve hangi argümanların iletildiğini gizlice kaydeden dublör hangisidir?",
+    "topic": "Test Doubles - Spy",
+    "question": "Which test double wraps an object and records interaction history, such as method invocation counts and passed arguments?",
     "options": [
+      "Spy",
       "Dummy",
-      "Spy (Casus)",
       "Fake",
       "Driver"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 84,
     "chapter": 3,
-    "topic": "Test Dublörleri - Mock",
-    "question": "Önceden belirlenmiş beklentilerle (expectations) programlanan ve test edilen nesnenin beklenen çağrıları doğru sıra ve parametrelerle yapıp yapmadığını (davranış doğrulaması) denetleyen dublör hangisidir?",
+    "topic": "Test Doubles - Mock",
+    "question": "Which test double is pre-programmed with expectations to directly verify interaction behavior and call patterns?",
     "options": [
       "Mock",
       "Dummy",
@@ -1099,608 +1099,608 @@ const QUESTIONS = [
   {
     "id": 85,
     "chapter": 3,
-    "topic": "Stub vs Mock Farkı",
-    "question": "Stub ve Mock arasındaki en kritik kavramsal ayrım hangi seçenekte doğru açıklanmıştır?",
+    "topic": "Stub vs Mock",
+    "question": "What is the primary difference between a Stub and a Mock?",
     "options": [
-      "Stub davranış doğrulaması (Behavior verification) yapar; Mock durum doğrulaması (State verification) yapar.",
-      "Stub dolaylı girdileri simüle ederek durum doğrulaması (State verification) için kullanılır; Mock ise dolaylı çıktıları ve metod çağrılarının etkileşimini (Behavior verification) doğrular.",
-      "Stub yalnızca veritabanları için, Mock yalnızca web servisleri için kullanılır.",
-      "Stub gerçek nesnedir, Mock ise sahte nesnedir."
+      "A Stub is used for state verification by providing indirect inputs; a Mock is used for behavior verification by validating interactions.",
+      "A Stub performs behavior verification; a Mock performs state verification.",
+      "A Stub requires a live network connection; a Mock does not.",
+      "A Stub is used only in production; a Mock is used only in testing."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 86,
     "chapter": 3,
-    "topic": "Ne Zaman Mock Kullanılmalı?",
-    "question": "Ders slaytlarında belirtilen kurallara göre, aşağıdakilerden hangisi Mock nesnesi kullanmak için EN UYGUN durumdur?",
+    "topic": "When to Mock",
+    "question": "When is using a Mock or Stub most appropriate?",
     "options": [
-      "Kendi yazdığımız basit matematiksel hesaplama fonksiyonları",
-      "Sistem saatini, dış ağ isteklerini (HTTP), dosya sistemini veya harici ödeme servislerini taklit etmek",
-      "Projenin temel veri modelleri (User, Product sınıfları)",
-      "Saf (pure) sıralama algoritmaları"
+      "When isolating code from external, slow, or non-deterministic dependencies such as network APIs, disk I/O, or system time.",
+      "When testing your own internal domain models and value objects.",
+      "When testing pure mathematical algorithms.",
+      "When testing simple string formatting methods."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 87,
     "chapter": 3,
-    "topic": "Ne Zaman Mock KULLANILMAMALI?",
-    "question": "Mock nesneleri ile ilgili 'When Not To Mock' kuralına göre aşağıdakilerden hangisini mock'lamak kötü bir pratiktir?",
+    "topic": "When NOT to Mock",
+    "question": "What should developers avoid mocking according to testing best practices?",
     "options": [
-      "Kendi veri modellerimizi (Domain Models), değer nesnelerimizi (Value Objects) veya saf algoritmaları",
-      "Harici SMS gönderme servisini",
-      "Üçüncü parti bulut depolama API'sini",
-      "E-posta sunucusu bağlantısını"
+      "Domain entities, value objects, and pure algorithmic logic that you own.",
+      "Third-party payment gateways.",
+      "External SMTP email delivery services.",
+      "Cloud object storage APIs."
     ],
     "answer": 0
   },
   {
     "id": 88,
     "chapter": 3,
-    "topic": "Fakes vs Mocks Tercihi",
-    "question": "Mümkün olduğu durumlarda karmaşık mock düzenekleri kurmak yerine 'Fake' (örn. in-memory repository) tercih edilmesinin sebebi nedir?",
+    "topic": "Preferring Fakes",
+    "question": "Why is preferring a Fake (such as an in-memory repository) often superior to creating complex mock hierarchies?",
     "options": [
-      "Fake nesnelerin testleri daha gerçekçi, daha az kırılgan (less brittle) ve sürdürülebilir kılması.",
-      "Fake nesnelerin derleyici tarafından doğrudan silinmesi.",
-      "Fake nesnelerin her zaman internet bağlantısı gerektirmesi.",
-      "Mock nesnelerinin hiçbir programlama dilinde desteklenmemesi."
+      "Fakes make tests more realistic, faster, and less brittle to internal refactoring.",
+      "Fakes execute inside the computer BIOS.",
+      "Fakes require zero lines of code.",
+      "Mocks are unsupported in modern programming languages."
     ],
     "answer": 0
   },
   {
     "id": 89,
     "chapter": 3,
-    "topic": "Mocking Framework - Given / When / Then",
-    "question": "Modern mock kütüphanelerinde (Mockito, Moq vb.) `when(service.getUser(1)).thenReturn(mockUser)` ifadesi hangi aşamaya karşılık gelir?",
+    "topic": "Mocking Framework - Given / When",
+    "question": "In modern mocking frameworks, what is the role of statements like 'when(service.getUser(id)).thenReturn(user)'?",
     "options": [
-      "Assert aşamasına",
-      "Arrange (Beklenti ve dönüş değerini hazırlama) aşamasına",
-      "Act aşamasına",
-      "Teardown aşamasına"
+      "Configuring stubbed return values during the Arrange phase.",
+      "Executing the target production method.",
+      "Verifying assert conditions after execution.",
+      "Deleting mock instances from memory."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 90,
     "chapter": 3,
     "topic": "Mocking Framework - Verify",
-    "question": "Bir mock nesnesi üzerinde `verify(emailService, times(1)).send(...)` çağrısı yapmak neyi doğrular?",
+    "question": "What does a verification statement like 'verify(mailer, times(1)).send(...)' assert?",
     "options": [
-      "Email servisinin sunucuya bağlandığını",
-      "Email servisinin `send` metodunun belirtilen parametreyle tam olarak 1 kez çağrıldığını",
-      "Emailin alıcıya ulaştığını",
-      "Servisin kod satır sayısını"
+      "That the send method on the mailer mock was invoked exactly once with matching arguments.",
+      "That the email was delivered to the recipient inbox.",
+      "That the SMTP server password is correct.",
+      "That the test runner completed all tests."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 91,
     "chapter": 3,
-    "topic": "Test İzolasyonu ve Sızıntı (Leakage)",
-    "question": "Testler arasında 'Test Leakage' (Durum Sızıntısı) oluşmasını önlemek için her testin ardından ne yapılmalıdır?",
+    "topic": "Test Isolation and Leakage",
+    "question": "Why is teardown and mock state resetting critical between test executions?",
     "options": [
-      "Test kütüphanesi yeniden yüklenmelidir.",
-      "Ortak durum, mock nesneleri ve statik alanlar sıfırlanmalı (reset / teardown) ve testler birbirinden bağımsız koşmalıdır.",
-      "Test dosyası silinip tekrar oluşturulmalıdır.",
-      "İşletim sistemi yeniden başlatılmalıdır."
+      "To prevent state leakage and test pollution across independent tests.",
+      "To reinstall the operating system kernel.",
+      "To recompile the test runner binary.",
+      "To update version control tags."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 92,
     "chapter": 3,
-    "topic": "Test Kokuları: Flaky Tests",
-    "question": "Aynı kod üzerinde hiçbir değişiklik yapılmadığı halde bazen başarılı olan bazen de başarısız olan (deterministik olmayan) testlere ne ad verilir?",
+    "topic": "Test Smells - Flaky Tests",
+    "question": "What is a 'Flaky Test'?",
     "options": [
-      "Flaky Test",
-      "Smoke Test",
-      "Unit Test",
-      "Stress Test"
+      "A test that exhibits non-deterministic outcomes, intermittently passing or failing without any code modifications.",
+      "A test that always fails every single run.",
+      "A test that executes in under one millisecond.",
+      "A test with 100% branch coverage."
     ],
     "answer": 0
   },
   {
     "id": 93,
     "chapter": 3,
-    "topic": "Flaky Testlerin Nedenleri",
-    "question": "Aşağıdakilerden hangisi bir testin 'Flaky' (kararsız) olmasına en sık yol açan etkenlerden biridir?",
+    "topic": "Causes of Flaky Tests",
+    "question": "Which of the following is a frequent cause of test flakiness?",
     "options": [
-      "Eşzamanlılık (concurrency / race conditions), sistem saatine bağımlılık ve paylaşılan küresel durum",
-      "Testin çok kısa olması",
-      "Kodda çok fazla açıklama satırı bulunması",
-      "Test metodunun isminin İngilizce olması"
+      "Concurrency race conditions, reliance on system clock time, and shared mutable state.",
+      "Using meaningful assertion messages.",
+      "Following the Arrange-Act-Assert pattern.",
+      "Running tests on isolated local machines."
     ],
     "answer": 0
   },
   {
     "id": 94,
     "chapter": 3,
-    "topic": "Test Kokuları: Fragile Tests",
-    "question": "Sistemin dış davranışında hiçbir değişiklik olmamasına rağmen, en ufak bir iç kod refactoring işleminde derhal çöken test kokusu hangisidir?",
+    "topic": "Test Smells - Fragile Tests",
+    "question": "What characterizes a 'Fragile / Brittle Test'?",
     "options": [
-      "Fragile / Brittle Test (Kırılgan Test)",
-      "Flaky Test",
-      "Robust Test",
-      "E2E Test"
+      "It breaks whenever internal implementation details change, even though the external contract and functional behavior remain correct.",
+      "It passes even when the production code is completely broken.",
+      "It runs on Linux but refuses to compile on Windows.",
+      "It requires multiple developers to execute."
     ],
     "answer": 0
   },
   {
     "id": 95,
     "chapter": 3,
-    "topic": "Test Kokuları: Obscure Tests",
-    "question": "'Obscure Test' kokusu ne anlama gelir?",
+    "topic": "Test Smells - Obscure Tests",
+    "question": "What constitutes an 'Obscure Test'?",
     "options": [
-      "Gereksiz karmaşıklık, aşırı uzun kurulum adımları veya anlamsız veriler nedeniyle neyi test ettiği ve neden başarısız olduğu kolayca anlaşılamayan test.",
-      "Hiç çalıştırılamayan test.",
-      "Sadece geceleri çalışan test.",
-      "Güvenlik açığı arayan test."
+      "A test that is difficult to understand due to excessive setup, irrelevant data, or convoluted assertions.",
+      "A test written in assembly language.",
+      "A test running on an air-gapped machine.",
+      "A test that passes silently."
     ],
     "answer": 0
   },
   {
     "id": 96,
     "chapter": 3,
-    "topic": "CI/CD ve Pre-commit Hook'lar",
-    "question": "Bir geliştiricinin hatalı veya standart dışı kodu GitHub'a 'commit' etmesini kendi yerel bilgisayarında engelleyen mekanizma hangisidir?",
+    "topic": "Pre-commit Hooks",
+    "question": "How do pre-commit hooks assist quality in development workflows?",
     "options": [
-      "Pre-commit hook",
-      "Pull request merge",
-      "Docker container",
-      "Kubernetes pod"
+      "They run linters and unit tests locally to block defective commits before they reach remote repositories.",
+      "They encrypt Git commits with digital signatures.",
+      "They automatically merge all branches without review.",
+      "They deploy code directly to public cloud clusters."
     ],
     "answer": 0
   },
   {
     "id": 97,
     "chapter": 3,
-    "topic": "GitHub Actions ile Test Otomasyonu",
-    "question": "GitHub Actions veya benzeri bir CI aracında her 'Pull Request' açıldığında testlerin koşulmasının en önemli getirisi nedir?",
+    "topic": "CI/CD Test Automation",
+    "question": "What is the primary benefit of triggering automated test suites on pull requests in GitHub Actions?",
     "options": [
-      "Geliştiricilere otomatik maaş zammı yapılması.",
-      "Bozuk veya gerilemeye (regression) neden olan kodun ana koda entegre edilmesini otomatik olarak bloke etmek.",
-      "Müşteriye otomatik fatura kesmek.",
-      "Proje dokümanlarını internette gizlemek."
+      "Providing continuous quality gates that block regressive or broken code from merging into mainline branches.",
+      "Reducing developer hardware memory usage.",
+      "Automatically rewriting application documentation.",
+      "Minimizing internet bandwidth usage."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 98,
     "chapter": 3,
     "topic": "Testing in Production",
-    "question": "Modern yazılım dağıtımlarında 'Testing in Production' (Üretimde Test) kapsamında kullanılan tekniklerden biri hangisidir?",
+    "question": "Which technique is commonly used to facilitate safe Testing in Production?",
     "options": [
-      "Canary Releases (Kanarya Sürümleri) ve Feature Flags",
-      "Gereksinim analizini atlamak",
-      "Veritabanını rastgele formatlamak",
-      "Birim testlerini tamamen silmek"
+      "Feature flags, canary releases, and synthetic user monitoring.",
+      "Disabling database foreign key constraints.",
+      "Stopping all automated unit test suites.",
+      "Allowing direct unauthenticated database updates."
     ],
     "answer": 0
   },
   {
     "id": 99,
     "chapter": 3,
-    "topic": "Kanarya Sürümü (Canary Release)",
-    "question": "'Canary Release' (Kanarya Dağıtımı) stratejisinin mantığı nedir?",
+    "topic": "Canary Releases",
+    "question": "What is the strategy behind a Canary Release?",
     "options": [
-      "Yeni sürümü önce kullanıcıların küçük bir yüzdesine (%1 - %5) açarak metrikleri ve olası hataları izlemek, sorun yoksa kademeli olarak genele yaymak.",
-      "Yazılımı yalnızca sarı renkli bilgisayarlara yüklemek.",
-      "Tüm sunucuları aynı anda durdurup gece güncelleme yapmak.",
-      "Sadece yöneticilerin görebileceği sahte bir web sitesi açmak."
+      "Rolling out new software to a small percentage of real users to monitor telemetry and error rates before full deployment.",
+      "Releasing software exclusively on weekends.",
+      "Testing software using dedicated hardware audio speakers.",
+      "Running tests only on staging servers."
     ],
     "answer": 0
   },
   {
     "id": 100,
     "chapter": 3,
-    "topic": "Kent Beck ve TDD Mirası",
-    "question": "TDD'nin modern yazılım mühendisliğinde bir disiplin olarak popülerleşmesini sağlayan ve 'Test-Driven Development: By Example' kitabının yazarı olan öncü kimdir?",
+    "topic": "Kent Beck and TDD",
+    "question": "Who formalized and popularized modern Test-Driven Development through the book 'Test-Driven Development: By Example'?",
     "options": [
       "Kent Beck",
       "Alan Turing",
-      "Linus Torvalds",
-      "Ada Lovelace"
+      "Dennis Ritchie",
+      "Bjarne Stroustrup"
     ],
     "answer": 0
   },
   {
     "id": 101,
     "chapter": 4,
-    "topic": "Kapsama ve Test Gücü",
-    "question": "Kod Kapsamı (Code Coverage) ve Mutasyon Testi (Mutation Testing) arasındaki temel fark hangi soruyu yanıtladıklarında yatar?",
+    "topic": "Coverage vs Mutation Testing",
+    "question": "What fundamental questions differentiate Code Coverage from Mutation Testing?",
     "options": [
-      "Kod Kapsamı: 'Kod çalıştırıldı mı?' | Mutasyon Testi: 'Testler bir hatayı tespit edebilir mi?'",
-      "Kod Kapsamı: 'Yazılım hızlı mı?' | Mutasyon Testi: 'Kod güvenli mi?'",
-      "Kod Kapsamı: 'Müşteri memnun mu?' | Mutasyon Testi: 'Kaç satır kod yazıldı?'",
-      "Kod Kapsamı: 'Veritabanı bağlandı mı?' | Mutasyon Testi: 'Kullanıcı arayüzü güzel mi?'"
+      "Code Coverage asks 'Was the code executed?'; Mutation Testing asks 'Would the tests detect a fault?'",
+      "Code Coverage asks 'Is the code fast?'; Mutation Testing asks 'Is the code secure?'",
+      "Code Coverage evaluates manual testing; Mutation Testing evaluates compiler errors.",
+      "Code Coverage measures database queries; Mutation Testing measures network bandwidth."
     ],
     "answer": 0
   },
   {
     "id": 102,
     "chapter": 4,
-    "topic": "İfade Kapsamı (Statement Coverage)",
-    "question": "İfade Kapsamı (Statement Coverage / Line Coverage) neyi ölçer?",
+    "topic": "Statement Coverage Definition",
+    "question": "What does Statement Coverage measure?",
     "options": [
-      "Test senaryolarının kod tabanındaki çalıştırılabilir satırların / ifadelerin yüzde kaçını en az bir kez çalıştırdığını",
-      "Yazılan yorum satırlarının toplam koda oranını",
-      "Kodda kaç adet `if` bloğu bulunduğunu",
-      "Testlerin çalışma süresinin milisaniye cinsinden değerini"
+      "The percentage of executable statements in the source code executed by the test suite.",
+      "The number of comments written per function.",
+      "The percentage of user stories completed in a sprint.",
+      "The ratio of test lines to production lines."
     ],
     "answer": 0
   },
   {
     "id": 103,
     "chapter": 4,
-    "topic": "İfade Kapsamının Zayıflığı",
-    "question": "%100 İfade Kapsamına (Statement Coverage) ulaşılmış bir test takımı neden hala kritik bir mantık hatasını kaçırabilir?",
+    "topic": "Statement Coverage Limitation",
+    "question": "Why can a test suite with 100% Statement Coverage still miss critical defects?",
     "options": [
-      "Çünkü derleyici ifade kapsamını tanımaz.",
-      "Çünkü bir `if` bloğunun yalnızca `true` dalı çalıştırılmış olabilir; `false` durumunda yapılması gerekenler veya boş `else` dalları hiç test edilmemiş olabilir.",
-      "Çünkü ifade kapsamı yalnızca Python dilinde geçerlidir.",
-      "Çünkü ifade kapsamı testlerin assertion içermesini zorunlu kılar."
+      "It may execute an if-block under true conditions while completely ignoring false branches or missing else logic.",
+      "Statement coverage only applies to interpreted languages.",
+      "Compilers ignore statements covered by tests.",
+      "Statement coverage requires tests to run without assertions."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 104,
     "chapter": 4,
-    "topic": "Dal / Karar Kapsamı (Branch Coverage)",
-    "question": "Dal / Karar Kapsamı (Branch / Decision Coverage) neyi hedefler?",
+    "topic": "Branch Coverage Definition",
+    "question": "What is required to achieve 100% Branch Coverage?",
     "options": [
-      "Programdaki her kontrol akışı karar noktasının (if, switch vb.) alabileceği tüm olası dalların (True ve False) en az birer kez test edilmesini",
-      "Yalnızca döngülerin (for/while) test edilmesini",
-      "Yalnızca hata fırlatan satırların denenmesini",
-      "Projedeki tüm Git dallarının (branches) birleştirilmesini"
+      "Every control transfer branch (both true and false outcomes of each decision) must be traversed at least once.",
+      "All possible execution paths must be traversed.",
+      "Every variable must be initialized to null.",
+      "All functions must be executed in parallel."
     ],
     "answer": 0
   },
   {
     "id": 105,
     "chapter": 4,
-    "topic": "Kapsama Hiyerarşisi (Subsumption)",
-    "question": "Test kriterleri arasındaki 'Subsumption' (Kapsama/İçerme) ilkesine göre aşağıdakilerden hangisi doğrudur?",
+    "topic": "Subsumption - Branch and Statement",
+    "question": "What is the subsumption relationship between Branch Coverage and Statement Coverage?",
     "options": [
-      "İfade Kapsamı (Statement Coverage), Dal Kapsamını (Branch Coverage) kapsar.",
-      "Dal Kapsamını (%100 Branch Coverage) sağlayan her test takımı, otomatik olarak %100 İfade Kapsamını da (Statement Coverage) sağlamış olur.",
-      "İkisi birbirinden tamamen bağımsızdır ve hiçbir zaman kesişmez.",
-      "İfade kapsamı her zaman dal kapsamından daha güçlü bir kriterdir."
+      "100% Branch Coverage guarantees 100% Statement Coverage.",
+      "100% Statement Coverage guarantees 100% Branch Coverage.",
+      "Branch Coverage and Statement Coverage are mutually exclusive.",
+      "Statement Coverage is strictly stronger than Branch Coverage."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 106,
     "chapter": 4,
-    "topic": "Koşul Kapsamı (Condition Coverage)",
-    "question": "`if (A && B)` gibi bileşik bir kararda 'Koşul Kapsamı' (Condition Coverage) neyi gerektirir?",
+    "topic": "Condition Coverage",
+    "question": "In a compound decision like 'if (A and B)', what does Condition Coverage require?",
     "options": [
-      "Sadece tüm ifadenin `true` olmasını",
-      "Bileşik ifadedeki her bir alt mantıksal koşulun (A ve B) bağımsız olarak hem True hem de False değerini en az bir kez almasını",
-      "A ve B değişkenlerinin string olmasını",
-      "Yalnızca tek bir test koşulmasını"
+      "Each individual boolean sub-condition (A and B) must evaluate to both true and false at least once.",
+      "Only the entire expression must evaluate to true.",
+      "A and B must have identical boolean values in every test.",
+      "The decision must contain at least three conditions."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 107,
     "chapter": 4,
-    "topic": "Çoklu Koşul Kapsamı (MCC)",
-    "question": "N adet bağımsız mantıksal alt koşul içeren bir karar ifadesinde Çoklu Koşul Kapsamı (Multiple Condition Coverage - MCC) sağlamak için kaç adet test kombinasyonu gereklidir?",
+    "topic": "Multiple Condition Coverage (MCC)",
+    "question": "How many test cases are required to achieve Multiple Condition Coverage (MCC) for a decision with N boolean conditions?",
     "options": [
-      "N adet test",
-      "N + 1 adet test",
-      "2^N adet test",
-      "N^2 adet test"
+      "2^N",
+      "N + 1",
+      "N",
+      "N^2"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "id": 108,
     "chapter": 4,
-    "topic": "MC/DC Neden Geliştirildi?",
-    "question": "MC/DC (Modified Condition/Decision Coverage) kriterinin ortaya çıkışındaki temel mühendislik sebebi nedir?",
+    "topic": "Purpose of MC/DC",
+    "question": "Why was Modified Condition/Decision Coverage (MC/DC) created?",
     "options": [
-      "Çoklu Koşul Kapsamının (MCC) koşul sayısı arttıkça üssel (2^N) olarak patlamasını engelleyip, doğrusal (linear) test sayısıyla yüksek güvenlik sağlamak.",
-      "Tüm testleri otomatik olarak silmek.",
-      "Sadece tek bir testle %100 kapsama elde etmek.",
-      "Birim testlerini gereksiz kılmak."
+      "To test compound conditions thoroughly without the exponential cost of Multiple Condition Coverage.",
+      "To eliminate the need for unit testing.",
+      "To test software without using test assertions.",
+      "To reduce code coverage to single-digit percentages."
     ],
     "answer": 0
   },
   {
     "id": 109,
     "chapter": 4,
-    "topic": "MC/DC Test Sayısı",
-    "question": "N adet koşul içeren bir karar ifadesi için MC/DC kriterini sağlamak üzere gereken minimum test sayısı kaçtır?",
+    "topic": "MC/DC Test Count",
+    "question": "What is the minimum number of tests required to satisfy MC/DC for a decision containing N boolean conditions?",
     "options": [
-      "N test",
-      "N + 1 test",
-      "2^N test",
-      "N! (Faktöriyel) test"
+      "N + 1",
+      "2^N",
+      "N",
+      "N!"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 110,
     "chapter": 4,
-    "topic": "MC/DC Bağımsız Etki İlkesi",
-    "question": "MC/DC'de bir alt koşulun kararı 'bağımsız olarak etkilediğini' (independent effect) göstermek için nasıl bir test çifti seçilmelidir?",
+    "topic": "MC/DC Independent Effect",
+    "question": "How is a condition shown to have an 'independent effect' on the decision outcome in MC/DC?",
     "options": [
-      "Tüm koşulların aynı anda değiştiği iki test.",
-      "Yalnızca incelenen koşulun değeri (True → False) değişirken diğer tüm koşulların sabit tutulduğu ve bu değişimin nihai karar sonucunu doğrudan değiştirdiği iki test.",
-      "Rastgele değerlerin girildiği iki test.",
-      "Her iki testin de başarısız olduğu durumlar."
+      "By varying that single condition while holding all other conditions fixed, and showing that the overall decision outcome changes.",
+      "By changing all conditions simultaneously.",
+      "By setting all conditions to false in every test.",
+      "By executing tests in reverse chronological order."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 111,
     "chapter": 4,
-    "topic": "MC/DC ve Emniyet Standardı DO-178C",
-    "question": "Havacılık ve emniyet-kritik yazılımlarda (Avionics Software) en yüksek seviye (Level A) için MC/DC test kapsamını zorunlu kılan uluslararası standart hangisidir?",
+    "topic": "DO-178C Standard",
+    "question": "Which safety-critical standard mandates MC/DC coverage for Level A airborne software systems?",
     "options": [
-      "ISO 9001",
       "DO-178C",
-      "IEEE 802.11",
-      "W3C HTML5"
+      "ISO 9001",
+      "IEEE 802.3",
+      "RFC 2616"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 112,
     "chapter": 4,
-    "topic": "Kapsama Merdiveni (Subsumption Hierarchy)",
-    "question": "Kod kapsama kriterlerinin en güçlüden en zayıfa doğru hiyerarşik sıralaması hangi seçenekte eksiksiz verilmiştir?",
+    "topic": "Coverage Subsumption Hierarchy",
+    "question": "What is the correct subsumption ladder from strongest to weakest coverage criterion?",
     "options": [
-      "Statement → Branch → MC/DC → Multiple Condition Coverage (MCC)",
-      "Multiple Condition Coverage (MCC) → MC/DC → Decision/Branch Coverage → Statement Coverage",
-      "MC/DC → Statement → Branch → MCC",
-      "Branch → Statement → MCC → MC/DC"
+      "Multiple Condition Coverage -> MC/DC -> Decision/Branch Coverage -> Statement Coverage",
+      "Statement Coverage -> Branch Coverage -> MC/DC -> Multiple Condition Coverage",
+      "MC/DC -> Multiple Condition Coverage -> Statement Coverage -> Branch Coverage",
+      "Branch Coverage -> Statement Coverage -> MC/DC -> Multiple Condition Coverage"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 113,
     "chapter": 4,
-    "topic": "RIPR Modeli Genel",
-    "question": "Ammann ve Offutt tarafından geliştirilen ve bir yazılım hatasının gözlemlenebilir bir başarısızlığa (failure) dönüşmesi için gereken 4 adımı açıklayan model hangisidir?",
+    "topic": "RIPR Model Overview",
+    "question": "What are the four sequential conditions of the RIPR fault model developed by Ammann and Offutt?",
     "options": [
-      "PDCA Döngüsü",
-      "RIPR Modeli (Reachability, Infection, Propagation, Revealability)",
-      "SWOT Analizi",
-      "ACID Modeli"
+      "Reachability, Infection, Propagation, Revealability",
+      "Review, Inspection, Programming, Refactoring",
+      "Request, Interface, Protocol, Response",
+      "Readiness, Integration, Performance, Release"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 114,
     "chapter": 4,
-    "topic": "RIPR - Reachability (Ulaşılabilirlik)",
-    "question": "RIPR modelinin ilk adımı olan 'Reachability' (Ulaşılabilirlik) neyi ifade eder?",
+    "topic": "RIPR - Reachability",
+    "question": "In the RIPR model, what does Reachability mean?",
     "options": [
-      "Kullanıcının internete bağlanabilmesini",
-      "Test girdisinin, yazılımda kusurun (fault) bulunduğu kod konumunu fiilen çalıştırmasını ve o satıra ulaşmasını",
-      "Sunucuya ping atılabilmesini",
-      "Veritabanının yedeklenmesini"
+      "The test execution must traverse to and execute the specific location containing the fault.",
+      "The user must be able to ping the server over the internet.",
+      "The test suite must reach 100% line coverage.",
+      "The database server must be online."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 115,
     "chapter": 4,
-    "topic": "RIPR - Infection (Bulaşma)",
-    "question": "RIPR modelinde 'Infection' (Bulaşma / Enfeksiyon) aşamasında ne gerçekleşir?",
+    "topic": "RIPR - Infection",
+    "question": "In the RIPR model, what constitutes Infection?",
     "options": [
-      "Bilgisayara truva atı virüsü bulaşması",
-      "Hatalı kod satırının çalıştırılması sonucunda programın iç durumunun (değişken değeri, bellek vb.) hatalı/bozuk hale gelmesi",
-      "Test raporunun silinmesi",
-      "Ekranda mavi ekran çıkması"
+      "Execution of the faulty code puts the internal program state into an incorrect or corrupted state.",
+      "A malicious virus infects the developer machine.",
+      "A test framework crashes upon launch.",
+      "A hard drive runs out of sectors."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 116,
     "chapter": 4,
-    "topic": "RIPR - Propagation (Yayılma)",
-    "question": "RIPR modelinde 'Propagation' (Yayılma) adımının gerçekleşmesi ne demektir?",
+    "topic": "RIPR - Propagation",
+    "question": "What occurs during the Propagation stage of the RIPR model?",
     "options": [
-      "Bozuk iç program durumunun yürütme boyunca ilerleyerek nihai program çıktısına veya gözlemlenebilir bir sonuca yansıması",
-      "Kodun başka bir sunucuya kopyalanması",
-      "Hatanın diğer geliştiricilere e-posta ile bildirilmesi",
-      "Test dosyasının adının değiştirilmesi"
+      "The infected internal state travels through subsequent computations to affect observable outputs.",
+      "The test file is copied across multiple servers.",
+      "The developer notifies the product owner of a bug.",
+      "The compiler replicates bytecodes."
     ],
     "answer": 0
   },
   {
     "id": 117,
     "chapter": 4,
-    "topic": "RIPR - Revealability (Görünürlük)",
-    "question": "RIPR modelinde 'Revealability' (Görünürlük / Açığa Çıkma) neyi ifade eder?",
+    "topic": "RIPR - Revealability",
+    "question": "What is Revealability in the RIPR model?",
     "options": [
-      "Test senaryosundaki assertion (iddia) kontrolünün, çıktıda meydana gelen bu hatalı sapmayı fiilen yakalayıp testi başarısız kılması",
-      "Kodun GitHub'da açık kaynak yapılması",
-      "Yazılımcının hatayı kabul etmesi",
-      "Ekran parlaklığının artırılması"
+      "A test assertion observes the incorrect output and registers a test failure.",
+      "The source code is published to an open-source repository.",
+      "A secret key is exposed in version control logs.",
+      "The application interface displays a dark theme."
     ],
     "answer": 0
   },
   {
     "id": 118,
     "chapter": 4,
-    "topic": "Kod Kapsamı vs RIPR",
-    "question": "Geleneksel Kod Kapsamı (Code Coverage) RIPR modelinin hangi basamağını garanti ederken hangilerini garanti EDEMEZ?",
+    "topic": "Code Coverage vs RIPR",
+    "question": "Which condition of the RIPR model does Code Coverage directly guarantee?",
     "options": [
-      "Yalnızca Reachability'yi (Ulaşılabilirlik) garanti eder; Infection, Propagation ve Revealability için garanti vermez.",
-      "Tüm adımları %100 garanti eder.",
-      "Yalnızca Revealability'yi garanti eder.",
-      "Hiçbir basamağı garanti etmez."
+      "Reachability only",
+      "Infection and Propagation only",
+      "Revealability only",
+      "All four conditions simultaneously"
     ],
     "answer": 0
   },
   {
     "id": 119,
     "chapter": 4,
-    "topic": "Mutasyon Testi Tanımı",
-    "question": "Mutasyon Testi (Mutation Testing) tekniğinin temel işleyiş mekanizması nedir?",
+    "topic": "Mutation Testing Principle",
+    "question": "What is the core mechanism of Mutation Testing?",
     "options": [
-      "Orijinal kaynak koda küçük sentaktik değişikliklerle yapay hatalar (mutantlar) enjekte etmek ve mevcut test takımının bu hataları yakalayıp yakalayamadığını ölçmek.",
-      "Donanım parçalarının sıcaklığını artırıp sistemi zorlamak.",
-      "Kullanıcıya farklı tasarımlar gösterip A/B testi yapmak.",
-      "Tüm kod tabanını başka bir programlama diline derlemek."
+      "Injecting small artificial syntactic faults into program copies and checking whether test suites detect them.",
+      "Testing software under extreme hardware temperature variations.",
+      "Generating random text in user interface forms.",
+      "Translating source code between different programming languages."
     ],
     "answer": 0
   },
   {
     "id": 120,
     "chapter": 4,
-    "topic": "Mutant Nedir?",
-    "question": "Mutasyon testinde 'Mutant' terimi neyi ifade eder?",
+    "topic": "Definition of a Mutant",
+    "question": "What is a 'Mutant' in mutation testing?",
     "options": [
-      "Test mühendisinin yazdığı hatalı test senaryosunu",
-      "Orijinal programın tek bir satırında veya operatöründe kasıtlı olarak küçük bir değişiklik yapılmış yapay kusurlu kopyasını",
-      "Veritabanında silinmiş verileri",
-      "Çalışmayan bir harici API'yi"
+      "A modified version of the program with a single small syntactic change representing a fault.",
+      "A failing unit test.",
+      "A corrupted test database record.",
+      "A third-party library dependency."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 121,
     "chapter": 4,
-    "topic": "Öldürülen Mutant (Killed Mutant)",
-    "question": "Bir mutant programa karşı test takımı çalıştırıldığında testlerden en az biri başarısız (Fail) olursa bu mutanta ne ad verilir?",
+    "topic": "Killed Mutant",
+    "question": "When is a mutant classified as 'Killed'?",
     "options": [
-      "Killed Mutant (Öldürülmüş / Yakalanmış Mutant)",
-      "Survived Mutant (Hayatta Kalan Mutant)",
-      "Equivalent Mutant (Eşdeğer Mutant)",
-      "Stillborn Mutant"
+      "When at least one test case in the test suite fails when run against the mutant program.",
+      "When all test cases pass against the mutant program.",
+      "When the compiler deletes the mutant file.",
+      "When the mutant code is rejected by git commit."
     ],
     "answer": 0
   },
   {
     "id": 122,
     "chapter": 4,
-    "topic": "Hayatta Kalan Mutant (Survived Mutant)",
-    "question": "Koddaki yapay hataya rağmen tüm testler yeşil yanarak başarılı olursa (Survived Mutant), bu durum test takımı hakkında ne gösterir?",
+    "topic": "Survived Mutant",
+    "question": "What does a 'Survived Mutant' indicate about a test suite?",
     "options": [
-      "Test takımının mükemmel olduğunu",
-      "Test takımında o koddaki değişikliği ve davranışı yakalayacak uygun girdi veya assertion (iddia) eksikliği olduğunu",
-      "Yazılımın hatasız çalıştığını",
-      "Mutasyon aracının bozuk olduğunu"
+      "The test suite lacks the specific inputs or assertions needed to detect that fault.",
+      "The test suite is complete and bug-free.",
+      "The program has reached 100% branch coverage.",
+      "The mutation tool encountered a runtime crash."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 123,
     "chapter": 4,
-    "topic": "Ölü Doğan Mutant (Stillborn Mutant)",
-    "question": "Mutasyon aracının ürettiği mutant kod sözdizimsel olarak geçersiz olduğu için derlenemiyorsa (compile error) buna ne ad verilir?",
+    "topic": "Stillborn Mutant",
+    "question": "What is a 'Stillborn Mutant'?",
     "options": [
-      "Stillborn Mutant (Ölü Doğan Mutant)",
-      "Equivalent Mutant",
-      "Survived Mutant",
-      "Immortal Mutant"
+      "A mutant that cannot compile or crashes immediately upon syntax translation.",
+      "A mutant that cannot be killed by any test.",
+      "A mutant that passes all tests.",
+      "A mutant that runs forever in a loop."
     ],
     "answer": 0
   },
   {
     "id": 124,
     "chapter": 4,
-    "topic": "Eşdeğer Mutant (Equivalent Mutant)",
-    "question": "Kaynak koddaki sentaktik değişikliğe rağmen orijinal programla tamamen aynı anlamsal davranışı sergileyen ve HİÇBİR testin öldüremeyeceği mutanta ne ad verilir?",
+    "topic": "Equivalent Mutant",
+    "question": "What defines an 'Equivalent Mutant'?",
     "options": [
-      "Equivalent Mutant (Eşdeğer Mutant)",
-      "Killed Mutant",
-      "Defective Mutant",
-      "Zombie Mutant"
+      "A mutant that changes syntactic structure but preserves identical semantic behavior to the original program.",
+      "A mutant killed by every test in the suite.",
+      "A mutant that contains multiple syntax errors.",
+      "A mutant that doubles code execution speed."
     ],
     "answer": 0
   },
   {
     "id": 125,
     "chapter": 4,
-    "topic": "Eşdeğer Mutantların Zorluğu",
-    "question": "Eşdeğer mutantların tespit edilmesi bilgisayar bilimlerinde neden teorik olarak otomatikleştirilemez ve mutasyon testinin en büyük maliyetidir?",
+    "topic": "Equivalent Mutants Undecidability",
+    "question": "Why cannot equivalent mutants be automatically filtered out by tools in the general case?",
     "options": [
-      "Çünkü programların anlamsal denkliği genel olarak 'karar verilemez' (undecidable) bir problemdir ve manuel insan incelemesi gerektirir.",
-      "Çünkü işletim sistemleri eşdeğer mutantları virüs sanır.",
-      "Çünkü eşdeğer mutantlar sadece Python'da oluşur.",
-      "Çünkü test araçları internete bağlanamaz."
+      "Program equivalence is undecidable in general, requiring manual inspection.",
+      "Operating systems prohibit comparing program binaries.",
+      "Equivalent mutants only occur in proprietary languages.",
+      "Compilers refuse to execute equivalent code."
     ],
     "answer": 0
   },
   {
     "id": 126,
     "chapter": 4,
-    "topic": "Mutasyon Skoru Formülü",
-    "question": "Ders slaytlarında verilen Mutasyon Skoru (Mutation Score) hesaplama formülü hangisidir?",
+    "topic": "Mutation Score Formula",
+    "question": "What is the standard formula for computing the Mutation Score?",
     "options": [
-      "Mutasyon Skoru = (Killed) / (Total - Equivalent)",
-      "Mutasyon Skoru = (Killed + Survived) / Total",
-      "Mutasyon Skoru = (Equivalent) / (Total)",
-      "Mutasyon Skoru = (Total) / (Killed - Survived)"
+      "Mutation Score = Killed / (Total - Equivalent)",
+      "Mutation Score = Killed / (Total + Equivalent)",
+      "Mutation Score = (Killed + Survived) / Total",
+      "Mutation Score = Survived / (Total - Killed)"
     ],
     "answer": 0
   },
   {
     "id": 127,
     "chapter": 4,
-    "topic": "Değer Mutasyonları (Value Mutations)",
-    "question": "Koddaki `int timeout = 5000;` satırının mutasyon aracı tarafından `int timeout = 5001;` veya `0` yapılması hangi mutasyon türüne örnektir?",
+    "topic": "Value Mutations",
+    "question": "Mutating a constant from 'int limit = 100;' to 'int limit = 101;' is an example of which mutation type?",
     "options": [
-      "Değer Mutasyonu (Value Mutation)",
-      "İfade Silme Mutasyonu",
-      "Arayüz Mutasyonu",
-      "Veritabanı Mutasyonu"
+      "Value Mutation",
+      "Statement Mutation",
+      "Decision Mutation",
+      "Interface Mutation"
     ],
     "answer": 0
   },
   {
     "id": 128,
     "chapter": 4,
-    "topic": "Karar Mutasyonları (Decision Mutations)",
-    "question": "Koddaki `if (a < b)` ifadesinin `if (a <= b)` haline getirilmesi durumunda, bu mutantı öldürebilecek TEK test girdisi hangisidir?",
+    "topic": "Decision Mutations",
+    "question": "When 'if (a < b)' is mutated to 'if (a <= b)', which test input will kill this mutant?",
     "options": [
-      "a > b olan bir girdi",
-      "a == b olan sınır değer girdisi",
-      "a < b olan herhangi bir girdi",
-      "a = 0 ve b = -1 girdisi"
+      "A boundary test where a == b",
+      "Any test where a > b",
+      "Any test where a < b",
+      "A test where a and b are both zero"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 129,
     "chapter": 4,
-    "topic": "İfade Mutasyonları (Statement Mutations)",
-    "question": "Bir metodun gövdesindeki `sendEmailNotification();` satırının tamamen silinmesi veya yoruma alınması hangi mutasyon türüdür?",
+    "topic": "Statement Mutations",
+    "question": "Deleting a method call or replacing a statement with an empty statement is an example of which mutation type?",
     "options": [
-      "İfade Mutasyonu (Statement Mutation / Deletion)",
-      "Karar Mutasyonu",
-      "Değer Mutasyonu",
-      "Tip Değiştirme Mutasyonu"
+      "Statement Mutation",
+      "Decision Mutation",
+      "Value Mutation",
+      "Type Mutation"
     ],
     "answer": 0
   },
   {
     "id": 130,
     "chapter": 4,
-    "topic": "Mutasyon Test Araçları - PIT",
-    "question": "Java ekosisteminde endüstri standardı olan en popüler ve modern mutasyon testi aracı hangisidir?",
+    "topic": "Mutation Tools - Java",
+    "question": "Which tool is the industry standard for mutation testing in Java?",
     "options": [
       "PIT (Pitest)",
       "Stryker",
-      "Mull",
-      "mutmut"
+      "mutmut",
+      "Mull"
     ],
     "answer": 0
   },
   {
     "id": 131,
     "chapter": 4,
-    "topic": "Mutasyon Test Araçları - Stryker",
-    "question": "JavaScript/TypeScript, C# (.NET) ve Scala dillerinde yaygın olarak kullanılan modern mutasyon testi çatısı hangisidir?",
+    "topic": "Mutation Tools - JavaScript and C#",
+    "question": "Which mutation testing framework supports JavaScript, TypeScript, C#, and Scala?",
     "options": [
-      "Stryker (StrykerJS / Stryker.NET)",
+      "Stryker",
       "PIT",
       "Infection",
       "Cosmic Ray"
@@ -1710,363 +1710,363 @@ const QUESTIONS = [
   {
     "id": 132,
     "chapter": 4,
-    "topic": "Mutasyon Test Araçları - Python",
-    "question": "Python programlama dilinde mutasyon testi yapmak için ders slaytlarında listelenen araçlar hangileridir?",
+    "topic": "Mutation Tools - Python",
+    "question": "Which tools perform mutation testing in Python as referenced in the lecture?",
     "options": [
-      "mutmut ve Cosmic Ray",
-      "PIT ve JUnit",
-      "Mull ve Cargo-mutants",
-      "Infection ve Stryker"
+      "mutmut and Cosmic Ray",
+      "PIT and JUnit",
+      "Mull and Stryker",
+      "Infection and Cargo-mutants"
     ],
     "answer": 0
   },
   {
     "id": 133,
     "chapter": 4,
-    "topic": "Mutasyon Testinin Avantajları",
-    "question": "Aşağıdakilerden hangisi Mutasyon Testinin Kod Kapsamına kıyasla sunduğu en büyük üstünlüktür?",
+    "topic": "Advantages of Mutation Testing",
+    "question": "What is the primary advantage of Mutation Testing over simple Code Coverage?",
     "options": [
-      "Çok az işlemci gücü tüketmesi ve saniyeler içinde bitmesi.",
-      "Yalnızca kodun çalıştırılıp çalıştırılmadığını değil, test takımının gerçek kusurları yakalama kabiliyetini doğrudan ölçmesi ve sınır değer assert'leri yazmaya teşvik etmesi.",
-      "Kaynak koda ihtiyaç duymadan siyah kutu olarak çalışabilmesi.",
-      "Yazılımcıların test yazma ihtiyacını tamamen ortadan kaldırması."
+      "It directly measures the fault-detection capability of a test suite and encourages precise boundary assertions.",
+      "It runs in less than one second on large codebases.",
+      "It works on compiled binaries without needing source code access.",
+      "It eliminates the need for unit tests."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 134,
     "chapter": 4,
-    "topic": "Mutasyon Testinin Dezavantajları",
-    "question": "Mutasyon testinin büyük kurumsal projelerde uygulanmasını zorlaştıran en temel dezavantajı nedir?",
+    "topic": "Disadvantages of Mutation Testing",
+    "question": "What is the primary disadvantage of Mutation Testing?",
     "options": [
-      "Hesaplama maliyetinin (computational cost) aşırı yüksek olması; binlerce mutant için test takımının defalarca baştan koşulması gerekliliği.",
-      "Mutasyon testlerinin hiçbir dilde desteklenmemesi.",
-      "Sadece Linux işletim sisteminde çalışabilmesi.",
-      "Geliştiricilerin kod yazmasını engellemesi."
+      "High computational cost from running the test suite across numerous mutants, plus manual effort for equivalent mutants.",
+      "Incompatibility with object-oriented languages.",
+      "Inability to run on modern multi-core operating systems.",
+      "Producing zero test metrics."
     ],
     "answer": 0
   },
   {
     "id": 135,
     "chapter": 5,
-    "topic": "Test Seviyesi vs Test Arayüzü",
-    "question": "Ders slaytlarında vurgulanan 'Test Seviyesi' (Test Level) ve 'Test Arayüzü' (Test Interface) arasındaki temel kavramsal fark nedir?",
+    "topic": "Test Level vs Test Interface",
+    "question": "What is the distinction between a Test Level and a Test Interface?",
     "options": [
-      "Test seviyesi sistemin ne kadarlık bir parçasının test edildiğini (Birim, Entegrasyon, Sistem) belirtirken; Test arayüzü sisteme nereden dokunulduğunu (Kod çağrısı, API, UI) ifade eder.",
-      "Test seviyesi sadece donanımı, test arayüzü ise sadece yazılımı inceler.",
-      "Test seviyesi testin kaç saniye sürdüğünü, test arayüzü ise hangi programlama diliyle yazıldığını gösterir.",
-      "İkisi tamamen aynı anlama gelir ve birbirinin yerine kullanılır."
+      "Test Level defines how big of a piece is tested; Test Interface defines where you touch the system.",
+      "Test Level measures test execution time; Test Interface measures network throughput.",
+      "Test Level is only used in Waterfall; Test Interface is only used in Agile.",
+      "They are synonyms and can be used interchangeably."
     ],
     "answer": 0
   },
   {
     "id": 136,
     "chapter": 5,
-    "topic": "Restoran Analojisi - API",
-    "question": "Hafta 5'te kullanılan 'Restoran Analojisi'nde menü ve sipariş alan garson yazılım mimarisinde neye karşılık gelir?",
+    "topic": "Restaurant Analogy - API",
+    "question": "In the week 5 restaurant analogy, what does an API represent?",
     "options": [
-      "Veritabanı tablosuna",
-      "API (Mutfakla iletişim kurmanın resmi arayüzü)",
-      "İşletim sistemi çekirdeğine",
-      "Birim testine"
+      "The menu and the waiter, serving as the official interface to communicate requests to the kitchen.",
+      "The dishwashing station in the back.",
+      "The dining room lighting.",
+      "The customer's credit card."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 137,
     "chapter": 5,
-    "topic": "Restoran Analojisi - Test Seviyeleri",
-    "question": "Restoran analojisinde 'Her bir malzemeyi tek başına tatmak' ve 'İstasyonlar arası sipariş fişlerinin doğru aktığını kontrol etmek' sırasıyla hangi test türleridir?",
+    "topic": "Restaurant Analogy - Levels",
+    "question": "In the restaurant analogy, what correspond to Unit Testing and Integration Testing respectively?",
     "options": [
-      "Birim Testi (Unit) ve Entegrasyon Testi (Integration)",
-      "Sistem Testi ve Kabul Testi",
-      "Performans Testi ve Güvenlik Testi",
-      "Statik Analiz ve Manuel Test"
+      "Tasting each ingredient on its own; checking that order tickets move correctly between kitchen stations.",
+      "Eating the full dinner as a customer; reading the food supplier invoice.",
+      "Washing the dishes; printing the menu.",
+      "Hiring a new chef; renovating the dining room."
     ],
     "answer": 0
   },
   {
     "id": 138,
     "chapter": 5,
-    "topic": "Mars Climate Orbiter Faciası",
-    "question": "1999 yılında Mars Climate Orbiter uzay aracının kaybolmasına yol açan ve entegrasyon testlerinin önemini kanıtlayan hata neydi?",
+    "topic": "Mars Climate Orbiter Defect",
+    "question": "What interface mismatch caused the loss of the Mars Climate Orbiter in 1999?",
     "options": [
-      "Geliştiricilerin hiç kod yazmamış olması.",
-      "Yer kontrol yazılımının itiş gücünü 'pound-force seconds' olarak göndermesi, uzay aracı navigasyon yazılımının ise 'newton seconds' (metrik SI) beklemesi nedeniyle 4.45 katlık arayüz birim uyuşmazlığı.",
-      "Aracın güneş panellerinin ters takılması.",
-      "Veritabanı şifresinin yanlış girilmesi."
+      "Ground software sent impulse in pound-force seconds, but navigation software expected newton seconds.",
+      "The spacecraft ran out of battery power during launch.",
+      "A cosmic ray corrupted the main computer memory.",
+      "The orbiter was programmed in an unsupported dialect of Fortran."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 139,
     "chapter": 5,
-    "topic": "Mars Faciasından Çıkarılan Ders",
-    "question": "Mars Climate Orbiter olayında her iki yazılım modülü de kendi birim testlerinden başarıyla geçmişti. Buradan çıkarılan en kritik test dersi nedir?",
+    "topic": "Lesson of Mars Climate Orbiter",
+    "question": "What critical testing lesson did the Mars Climate Orbiter failure demonstrate?",
     "options": [
-      "Birim testleri geçerse başka hiçbir teste gerek yoktur.",
-      "Modüller kendi başlarına kusursuz çalışsa bile, aralarındaki veri formatı ve arayüz sözleşmesi test edilmezse sistem entegrasyon noktasında felaketle sonuçlanabilir.",
-      "Uzay araçlarında yazılım kullanılmamalıdır.",
-      "Tüm hesaplamalar elle yapılmalıdır."
+      "Components can pass all their unit tests individually and still fail catastrophically at the interface between them.",
+      "Unit testing is sufficient for all spacecraft software.",
+      "Software should never use metric units.",
+      "Automated testing is unnecessary if code is reviewed manually."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 140,
     "chapter": 5,
-    "topic": "Bileşen vs Sistem Entegrasyonu",
-    "question": "Kendi geliştirdiğimiz Sipariş Servisi ile Veritabanı arasındaki entegrasyon testi ile; sistemimiz ile Stripe/PayPal ödeme sağlayıcısı arasındaki entegrasyon testi sırasıyla nasıl sınıflandırılır?",
+    "topic": "Component vs System Integration",
+    "question": "What is the difference between Component Integration Testing and System Integration Testing?",
     "options": [
-      "Bileşen Entegrasyon Testi (Component Integration) ve Sistem Entegrasyon Testi (System Integration)",
-      "Birim Testi ve Kullanıcı Kabul Testi",
-      "Statik Test ve Beyaz Kutu Testi",
-      "Donanım Testi ve Ağ Testi"
+      "Component integration tests parts inside one system; system integration tests interactions between your system and external systems you do not own.",
+      "Component integration is manual; system integration is automated.",
+      "Component integration tests hardware; system integration tests documentation.",
+      "System integration is performed exclusively before unit testing."
     ],
     "answer": 0
   },
   {
     "id": 141,
     "chapter": 5,
-    "topic": "Tipik Arayüz Hataları",
-    "question": "Aşağıdakilerden hangisi modüller arası entegrasyon testlerinde en sık karşılaşılan tipik arayüz kusurlarından (Interface Defects) biridir?",
+    "topic": "Typical Interface Defects",
+    "question": "Which of the following is a common category of interface defect according to the slides?",
     "options": [
-      "Veri formatı ve ölçü birimi uyuşmazlıkları (örn. Tarih formatları, para birimi)",
-      "Eksik veri alanları veya beklenmeyen null değerler",
-      "Metot çağrı sırası (Call order) hataları ve zaman aşımı (timeout) varsayımları",
-      "Yukarıdakilerin hepsi"
+      "Data mismatches, missing fields, incorrect call ordering, and flawed error handling assumptions.",
+      "Syntax errors rejected by compilers.",
+      "Low monitor screen refresh rates.",
+      "Typographical errors in code comments."
     ],
-    "answer": 3
+    "answer": 0
   },
   {
     "id": 142,
     "chapter": 5,
-    "topic": "Büyük Patlama (Big-Bang) Entegrasyonu",
-    "question": "Büyük Patlama (Big-Bang) entegrasyon stratejisinin temel özelliği ve en büyük dezavantajı nedir?",
+    "topic": "Big-Bang Integration Strategy",
+    "question": "What defines the Big-Bang integration strategy?",
     "options": [
-      "Tüm modüller ayrı ayrı test edilmeden tek seferde birleştirilir; bir hata çıktığında hatanın hangi modülden veya bağlantıdan kaynaklandığını tespit etmek son derece zordur.",
-      "Çok fazla Stub ve Driver yazılmasını gerektirir.",
-      "Sadece tek bir modülün test edilmesidir.",
-      "Yalnızca mikroservis mimarilerinde uygulanabilir."
+      "All modules are combined together at once before testing begins, making defect localization difficult when failures occur.",
+      "Modules are added and tested one at a time using stubs.",
+      "Only user acceptance tests are executed.",
+      "Testing is performed exclusively in production environments."
     ],
     "answer": 0
   },
   {
     "id": 143,
     "chapter": 5,
-    "topic": "Artımlı (Incremental) Entegrasyon",
-    "question": "Artımlı Entegrasyon (Incremental Integration) yaklaşımının Büyük Patlama'ya kıyasla en belirgin üstünlüğü nedir?",
+    "topic": "Incremental Integration Advantage",
+    "question": "What is the primary advantage of Incremental Integration over Big-Bang?",
     "options": [
-      "Hiçbir planlama gerektirmemesi.",
-      "Modüllerin sisteme birer birer eklenip her adımda test edilmesi sayesinde ortaya çıkan hataların hemen son eklenen parçada kolayca izole edilebilmesi.",
-      "Testlerin tamamen kaldırılmasını sağlaması.",
-      "Yalnızca son kullanıcılar tarafından yapılması."
+      "Defects appear early and are easily localized to the most recently added module.",
+      "It requires zero planning or test scaffolding.",
+      "It eliminates the need for stubs and drivers.",
+      "It allows testing without writing any test assertions."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 144,
     "chapter": 5,
-    "topic": "Yukarıdan Aşağıya (Top-Down) Entegrasyon",
-    "question": "Yukarıdan Aşağıya (Top-Down) entegrasyon stratejisinde henüz geliştirilmemiş veya entegre edilmemiş alt seviye modüllerin yerine ne kullanılır?",
+    "topic": "Top-Down Integration",
+    "question": "Which test scaffolding is required when performing Top-Down incremental integration?",
     "options": [
-      "Driver (Sürücü)",
-      "Stub (Koçan / Sahte Alt Modül)",
-      "Linter",
-      "Derleyici"
+      "Stubs to simulate missing lower-level modules.",
+      "Drivers to invoke the top-level modules.",
+      "Microservice load balancers.",
+      "Hardware oscilloscopes."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 145,
     "chapter": 5,
-    "topic": "Aşağıdan Yukarıya (Bottom-Up) Entegrasyon",
-    "question": "Aşağıdan Yukarıya (Bottom-Up) entegrasyon stratejisinde alt seviye modülleri çağırmak ve test etmek için henüz hazır olmayan üst seviye modüllerin yerine ne yazılır?",
+    "topic": "Bottom-Up Integration",
+    "question": "Which test scaffolding is required when performing Bottom-Up incremental integration?",
     "options": [
-      "Stub",
-      "Driver (Test Sürücüsü / Çağırıcı)",
-      "Mock veritabanı",
-      "Browser eklentisi"
+      "Drivers to call and pass inputs into lower-level modules under test.",
+      "Stubs to simulate leaf components.",
+      "Static code linters.",
+      "Browser extensions."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 146,
     "chapter": 5,
-    "topic": "Sandviç (Sandwich) Entegrasyonu",
-    "question": "Sandviç (Sandwich / Hibrit) entegrasyon stratejisi nasıl çalışır?",
+    "topic": "Sandwich Integration",
+    "question": "How does Sandwich (Hybrid) integration combine integration approaches?",
     "options": [
-      "Yukarıdan aşağıya ve aşağıdan yukarıya yaklaşımları birleştirerek, çekirdek bir orta katman etrafında sistemi aynı anda entegre eder.",
-      "Yalnızca iki katmanlı yazılımlarda kullanılır.",
-      "Öğle arasında yapılan manuel testtir.",
-      "Testlerin sadece hafta sonu koşulmasıdır."
+      "It applies Top-Down from upper layers and Bottom-Up from lower layers, converging on a middle core layer.",
+      "It integrates client applications without ever testing the server.",
+      "It tests software only during meal breaks.",
+      "It replaces automated tests with manual exploratory scripts."
     ],
     "answer": 0
   },
   {
     "id": 147,
     "chapter": 5,
-    "topic": "Sözleşme Testi (Contract Testing) ve Pact",
-    "question": "Mikroservisler arasında API uyumluluğunu doğrulamak için kullanılan Tüketici Odaklı Sözleşme Testi (Consumer-Driven Contracts) ve 'Pact' aracının amacı nedir?",
+    "topic": "Contract Testing with Pact",
+    "question": "What is the purpose of Consumer-Driven Contract testing using tools like Pact?",
     "options": [
-      "Avukatların hazırladığı lisans sözleşmesini kontrol etmek.",
-      "İstemcinin (consumer) servisten ne beklediğini bir sözleşme haline getirip, sağlayıcının (provider) bu sözleşmeyi bozmadan hizmet verdiğini izole şekilde doğrulamak.",
-      "Sunucuların elektrik tüketimini ölçmek.",
-      "Kullanıcı şifrelerini şifrelemek."
+      "Allowing API consumers to define contracts of expected interactions that providers verify independently without live integrated environments.",
+      "Enforcing legal software copyright agreements.",
+      "Measuring physical network wire latency.",
+      "Encrypting JSON request bodies."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 148,
     "chapter": 5,
-    "topic": "HTTP Metotları - GET",
-    "question": "REST mimarisinde HTTP GET metodunun temel özellikleri hangi seçenekte doğru verilmiştir?",
+    "topic": "HTTP GET Method",
+    "question": "What are the core properties of the HTTP GET method?",
     "options": [
-      "Sunucuda yeni kayıt oluşturur, güvenli değildir.",
-      "Kaynakları sorgulamak/okumak için kullanılır; Güvenli (Safe) ve Idempotent (Eşgüçlü) bir metottur.",
-      "Sunucudaki veritabanını tamamen siler.",
-      "Her zaman istek gövdesinde (request body) şifreli veri taşımalıdır."
+      "Safe and idempotent; used to retrieve resources without modifying server state.",
+      "Neither safe nor idempotent; used to upload database backups.",
+      "Modifies server state on every invocation.",
+      "Requires an encrypted request body payload."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 149,
     "chapter": 5,
-    "topic": "HTTP Metotları - POST",
-    "question": "HTTP POST metodunun tipik kullanım amacı ve idempotentlik durumu nedir?",
+    "topic": "HTTP POST Method",
+    "question": "What is the primary role of HTTP POST in RESTful APIs?",
     "options": [
-      "Sunucuda yeni bir kaynak oluşturmak için kullanılır; Idempotent DEĞİLDİR (aynı istek tekrarlandığında birden fazla kaynak oluşturabilir).",
-      "Yalnızca dosya indirmek için kullanılır ve idempotenttir.",
-      "Sunucu durumunu asla değiştirmez (safe).",
-      "Sadece hata durumunda çağrılır."
+      "Creating new subordinate resources; it is neither safe nor idempotent.",
+      "Reading static documentation files without changing state.",
+      "Deleting existing database records idempotently.",
+      "Replacing entire existing resources idempotently."
     ],
     "answer": 0
   },
   {
     "id": 150,
     "chapter": 5,
-    "topic": "HTTP Metotları - PUT",
-    "question": "HTTP PUT metodu ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "topic": "HTTP PUT Method",
+    "question": "Which statement accurately describes the HTTP PUT method?",
     "options": [
-      "Belirtilen URL'deki kaynağı tamamen güncellemek / üzerine yazmak için kullanılır ve Idempotenttir.",
-      "Asla idempotent değildir.",
-      "Yalnızca resim dosyalarını silmek için kullanılır.",
-      "Güvenli (Safe) bir metottur, sunucu durumunu değiştirmez."
+      "It replaces or creates the target resource completely and is idempotent.",
+      "It is safe and never modifies server data.",
+      "It is non-idempotent and appends duplicate entries on repeat calls.",
+      "It is unsupported by modern web browsers."
     ],
     "answer": 0
   },
   {
     "id": 151,
     "chapter": 5,
-    "topic": "HTTP Metotları - PATCH vs PUT",
-    "question": "PATCH metodu ile PUT metodu arasındaki temel fark nedir?",
+    "topic": "HTTP PATCH vs PUT",
+    "question": "What is the difference between PATCH and PUT?",
     "options": [
-      "PUT kaynağın tamamını günceller / değiştirir; PATCH ise kaynağın sadece belirli alanlarını kısmi olarak (partial update) günceller.",
-      "PATCH veriyi siler, PUT ekler.",
-      "PUT tarayıcılarda çalışmaz.",
-      "PATCH güvenli bir metottur, PUT değildir."
+      "PATCH applies partial modifications to a resource; PUT replaces the resource entirely.",
+      "PATCH deletes resources; PUT creates them.",
+      "PUT is non-idempotent; PATCH is always safe.",
+      "PATCH cannot carry a request body."
     ],
     "answer": 0
   },
   {
     "id": 152,
     "chapter": 5,
-    "topic": "HTTP Metotları - DELETE",
-    "question": "HTTP DELETE metodunun idempotentlik niteliği nedir?",
+    "topic": "HTTP DELETE Method",
+    "question": "What is the idempotency property of HTTP DELETE?",
     "options": [
-      "Idempotenttir; aynı silme isteğinin bir veya birden fazla kez gönderilmesi sunucu kaynak durumunda aynı nihai sonucu (kaynağın silinmiş olması) bırakır.",
-      "Kesinlikle idempotent değildir.",
-      "Güvenli (Safe) bir metottur.",
-      "Yalnızca GET isteğiyle birlikte çalışabilir."
+      "It is idempotent; repeating the deletion request leaves the resource in the same deleted state.",
+      "It is non-idempotent; repeating it corrupts the database.",
+      "It is a safe method that makes no server modifications.",
+      "It cannot return an HTTP status code."
     ],
     "answer": 0
   },
   {
     "id": 153,
     "chapter": 5,
-    "topic": "Güvenli (Safe) Metot Kavramı",
-    "question": "HTTP protokolünde bir metodun 'Güvenli' (Safe) olması ne anlama gelir?",
+    "topic": "Safe HTTP Methods",
+    "question": "What makes an HTTP method 'Safe'?",
     "options": [
-      "İsteğin SSL sertifikası kullanmasıdır.",
-      "İsteğin sunucudaki kaynak durumunu değiştirmemesi, yalnızca salt okunur (read-only) işlem yapmasıdır.",
-      "Şifre gerektirmemesidir.",
-      "Yalnızca güvenli ağlarda çalışabilmesidir."
+      "It does not alter the state of resources on the server.",
+      "It requires biometric authentication.",
+      "It can only be called from behind a firewall.",
+      "It is encrypted using TLS."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 154,
     "chapter": 5,
-    "topic": "Idempotent Metot Kavramı",
-    "question": "Bir HTTP metodunun 'Idempotent' (Eşgüçlü) olması tam olarak neyi ifade eder?",
+    "topic": "Idempotent HTTP Methods",
+    "question": "What does 'Idempotence' mean in HTTP semantics?",
     "options": [
-      "İsteğin 1 milisaniyeden kısa sürmesini.",
-      "Aynı isteğin art arda defalarca çalıştırılmasının sunucu durumu üzerinde tek bir çalıştırmayla aynı yan etkiyi üretmesini.",
-      "İsteğin yalnızca tek bir sunucuya iletilebilmesini.",
-      "İstek gövdesinin boş olmasını."
+      "Multiple identical requests have the same intended effect on server state as a single request.",
+      "The request finishes in under 100 milliseconds.",
+      "The response body is guaranteed to be empty.",
+      "The request is signed with a cryptographic token."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 155,
     "chapter": 5,
-    "topic": "HTTP Durum Kodu: 200 vs 201",
-    "question": "Başarılı bir `POST /orders` isteği sonucunda yeni bir sipariş kaydı oluşturulduğunda dönmesi beklenen en standart HTTP yanıt kodu nedir?",
+    "topic": "Status Code - 201 Created",
+    "question": "Which HTTP status code should be returned when a POST request successfully creates a new resource?",
     "options": [
-      "200 OK",
       "201 Created",
+      "200 OK",
       "204 No Content",
-      "301 Moved Permanently"
+      "304 Not Modified"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 156,
     "chapter": 5,
-    "topic": "HTTP Durum Kodu: 204 No Content",
-    "question": "Bir `DELETE /orders/42` isteği başarıyla tamamlandığında ve sunucu yanıt gövdesinde (body) hiçbir içerik döndürmeyeceğinde hangi durum kodu kullanılır?",
+    "topic": "Status Code - 204 No Content",
+    "question": "When should an API return HTTP 204 No Content?",
     "options": [
-      "200 OK",
-      "204 No Content",
-      "404 Not Found",
-      "500 Internal Server Error"
+      "When a request succeeds and the server does not need to return an entity body (common after DELETE).",
+      "When the requested resource could not be found on the server.",
+      "When the client authentication token has expired.",
+      "When an unhandled exception crashes the backend."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 157,
     "chapter": 5,
-    "topic": "HTTP Durum Kodu: 401 vs 403",
-    "question": "HTTP 401 (Unauthorized) ve 403 (Forbidden) arasındaki fark nedir?",
+    "topic": "Status Code - 401 vs 403",
+    "question": "What is the distinction between HTTP 401 Unauthorized and HTTP 403 Forbidden?",
     "options": [
-      "401 kimlik doğrulanmadığında (authentication required / login olunmamış); 403 ise kimlik doğrulanmış ancak o kaynağa erişim yetkisi (authorization) yetersiz olduğunda döner.",
-      "401 sunucu hatasıdır; 403 istemci hatasıdır.",
-      "401 başarılı yanıttır; 403 yönlendirmedir.",
-      "İkisi tamamen farksızdır."
+      "401 means authentication is required or credentials are invalid; 403 means the user is authenticated but lacks required authorization.",
+      "401 is a server crash; 403 is a client timeout.",
+      "401 is a temporary redirect; 403 is a permanent redirect.",
+      "They are completely identical in the HTTP specification."
     ],
     "answer": 0
   },
   {
     "id": 158,
     "chapter": 5,
-    "topic": "HTTP Durum Kodu: 404 vs 409",
-    "question": "İstenen kaynak bulunamadığında 404 (Not Found) dönerken; sistemde zaten var olan bir e-posta adresiyle tekrar kayıt olunmaya çalışıldığında hangi durum kodu döner?",
+    "topic": "Status Code - 404 vs 409",
+    "question": "If 404 indicates a resource was not found, which status code indicates a conflict with current server state, such as duplicate registration?",
     "options": [
       "409 Conflict",
-      "200 OK",
+      "400 Bad Request",
       "502 Bad Gateway",
-      "304 Not Modified"
+      "405 Method Not Allowed"
     ],
     "answer": 0
   },
   {
     "id": 159,
     "chapter": 5,
-    "topic": "HTTP Durum Kodu: 422 Unprocessable Entity",
-    "question": "Gönderilen JSON sözdizimsel olarak doğru olmasına rağmen, içerisindeki alan iş kurallarına aykırıysa (örn. yaş negatif girilmişse) hangi durum kodu tercih edilir?",
+    "topic": "Status Code - 422 Unprocessable Entity",
+    "question": "Which HTTP status code indicates that the request body syntax is correct, but contains semantic validation errors (e.g. negative price)?",
     "options": [
       "422 Unprocessable Entity",
-      "200 OK",
       "500 Internal Server Error",
+      "200 OK",
       "401 Unauthorized"
     ],
     "answer": 0
@@ -2074,533 +2074,533 @@ const QUESTIONS = [
   {
     "id": 160,
     "chapter": 5,
-    "topic": "HTTP Durum Kodu: 500 vs 503",
-    "question": "Sunucu tarafında işlenmeyen beklenmedik bir yazılım hatası / çökme olduğunda 500 dönerken; sunucu aşırı yük altındayken veya bakımdayken hangi kod döner?",
+    "topic": "Status Code - 500 vs 503",
+    "question": "What differentiates HTTP 500 Internal Server Error from HTTP 503 Service Unavailable?",
     "options": [
-      "503 Service Unavailable",
-      "404 Not Found",
-      "201 Created",
-      "400 Bad Request"
+      "500 indicates an unexpected software bug on the server; 503 indicates temporary overload or maintenance.",
+      "500 is a client error; 503 is a database error.",
+      "500 means resource deleted; 503 means resource updated.",
+      "500 is safe; 503 is unsafe."
     ],
     "answer": 0
   },
   {
     "id": 161,
     "chapter": 5,
-    "topic": "Postman - Ortam Değişkenleri (Environment)",
-    "question": "Postman'de testleri hem 'Geliştirme' (Dev) hem de 'Test' (Staging) ortamında çalıştırmak için `{{baseUrl}}` gibi değişkenler nerede tutulmalıdır?",
+    "topic": "Postman Environments",
+    "question": "How are environment variables utilized in Postman collections?",
     "options": [
-      "Environment (Ortam Değişkenleri)",
-      "Ekran görüntüsü klasöründe",
-      "Yalnızca e-posta taslaklarında",
-      "Sabit kod olarak her isteğin içine elle yazılarak"
+      "They parameterize URLs and dynamic values like {{baseUrl}} across development, staging, and production environments.",
+      "They format HTML layouts.",
+      "They encrypt passwords on paper.",
+      "They permanently delete collection folders."
     ],
     "answer": 0
   },
   {
     "id": 162,
     "chapter": 5,
-    "topic": "Postman - Pre-request Script vs Test Script",
-    "question": "Postman'de bir istek gönderilmeden ÖNCE çalışan betikler ile yanıt geldikten SONRA çalışan betikler hangi sekmelerde yazılır?",
+    "topic": "Pre-request Scripts vs Tests",
+    "question": "In Postman, when do Pre-request Scripts execute relative to Tests scripts?",
     "options": [
-      "Pre-request Script (Önce) ve Tests (Sonra)",
-      "Tests (Önce) ve Headers (Sonra)",
-      "Body (Önce) ve Params (Sonra)",
-      "Settings (Önce) ve Console (Sonra)"
+      "Pre-request Scripts run before the request is dispatched; Tests scripts run after the response is received.",
+      "Tests scripts run before; Pre-request Scripts run after.",
+      "Both scripts execute simultaneously during transmission.",
+      "Neither script executes unless manually triggered by mouse clicks."
     ],
     "answer": 0
   },
   {
     "id": 163,
     "chapter": 5,
-    "topic": "Postman Test Sözdizimi",
-    "question": "Postman test sekmesinde yanıtın durum kodunun 200 olduğunu doğrulamak için kullanılan standart test kodu hangisidir?",
+    "topic": "Postman Status Assertion",
+    "question": "Which Postman snippet correctly verifies that the response status code is 200?",
     "options": [
-      "pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-      "assert status == 200 in postman;",
-      "check(200);",
-      "validate.response.code = 200;"
+      "pm.test('Status is 200', () => { pm.response.to.have.status(200); });",
+      "assert.status == 200;",
+      "checkResponse(200);",
+      "validate status(200);"
     ],
     "answer": 0
   },
   {
     "id": 164,
     "chapter": 5,
-    "topic": "Postman - JSON Doğrulama",
-    "question": "Postman'de dönen yanıt gövdesindeki `user.role` alanının 'admin' olduğunu Chai sözdizimiyle doğrulamak için hangi kod kullanılır?",
+    "topic": "Postman Chai Assertion",
+    "question": "Which Postman assertion correctly validates that the JSON property user.role equals 'admin'?",
     "options": [
-      "pm.expect(pm.response.json().user.role).to.eql(\"admin\");",
-      "verify role == admin",
-      "pm.check(\"admin\");",
-      "response.body.equals(\"admin\");"
+      "pm.expect(pm.response.json().user.role).to.eql('admin');",
+      "verify role == 'admin';",
+      "pm.response.role.check('admin');",
+      "assert(role, admin);"
     ],
     "answer": 0
   },
   {
     "id": 165,
     "chapter": 5,
-    "topic": "JSON Şema Doğrulama (Schema Validation)",
-    "question": "API testlerinde yanıtın sadece değerini değil, dönen verinin tiplerini ve zorunlu alanlarını garantiye almak için ne kullanılır?",
+    "topic": "JSON Schema Validation",
+    "question": "What is the primary benefit of performing JSON Schema validation in automated API tests?",
     "options": [
-      "JSON Schema Validation (ajv kütüphanesi)",
-      "Yalnızca kelime sayacı",
-      "HTML validator",
-      "Rastgele sayı üreteci"
+      "Ensuring that API responses strictly adhere to defined structural types, formats, and required field contracts.",
+      "Improving API network transmission speed.",
+      "Minimizing database disk usage.",
+      "Compressing JSON response bodies."
     ],
     "answer": 0
   },
   {
     "id": 166,
     "chapter": 5,
-    "topic": "Newman CLI Aracı",
-    "question": "Postman koleksiyonlarını grafik arayüz olmadan komut satırından (headless) ve Jenkins/GitHub Actions CI/CD hatlarında koşturmak için kullanılan araç hangisidir?",
+    "topic": "Newman CLI Runner",
+    "question": "What is Newman in the Postman ecosystem?",
     "options": [
-      "Newman",
-      "Selenium",
-      "Wireshark",
-      "Valgrind"
+      "A command-line collection runner that enables running Postman tests in headless CI/CD build environments.",
+      "A visual database management tool.",
+      "A web browser for manual exploratory testing.",
+      "An API mock server hosted on physical hardware."
     ],
     "answer": 0
   },
   {
     "id": 167,
     "chapter": 5,
-    "topic": "Newman CI/CD Entegrasyonu",
-    "question": "Bir CI/CD derleme hattında `newman run my_collection.json -e env.json` komutu başarısız bir testle karşılaştığında hattın derlemeyi (build) durdurmasını sağlayan mekanizma nedir?",
+    "topic": "Newman CI Pipeline Failure",
+    "question": "How does Newman communicate a test failure to automated CI build pipelines?",
     "options": [
-      "Newman'ın sıfırdan farklı bir çıkış kodu (non-zero exit code) döndürmesi",
-      "Bilgisayarın fişini çekmesi",
-      "Kullanıcıya SMS atması",
-      "Veritabanını sıfırlaması"
+      "By exiting with a non-zero exit code to signal build failure to the CI orchestrator.",
+      "By shutting down the entire CI server operating system.",
+      "By sending a fax to the system administrator.",
+      "By deleting the repository source code."
     ],
     "answer": 0
   },
   {
     "id": 168,
     "chapter": 6,
-    "topic": "Model Tabanlı Test Tasarımı",
-    "question": "Hafta 6 ders slaytlarında yazılım modelinden test türetmek için ele alınan 3 temel modelleme yöntemi hangileridir?",
+    "topic": "Model-Based Test Design",
+    "question": "What three model-based test derivation approaches are examined in Chapter 6?",
     "options": [
-      "Kontrol Akış Grafı (Graph Coverage), Veri Akışı (Data Flow) ve Karar Tabloları (Decision Tables)",
-      "SQL Tabloları, NoSQL Belgeleri ve Excel Sayfaları",
-      "CSS Seçicileri, HTML Etiketleri ve JavaScript Olayları",
-      "Birim Testi, Sistem Testi ve Kabul Testi"
+      "Control Flow Graph coverage, Data Flow coverage, and Decision Tables.",
+      "SQL queries, NoSQL collections, and Excel spreadsheets.",
+      "HTML layout, CSS styling, and JavaScript event loops.",
+      "Waterfall stages, Agile sprints, and Kanban boards."
     ],
     "answer": 0
   },
   {
     "id": 169,
     "chapter": 6,
-    "topic": "Kontrol Akış Grafı (CFG) Bileşenleri",
-    "question": "Bir Kontrol Akış Grafında (Control Flow Graph - CFG) Düğümler (Nodes) ve Kenarlar (Edges) sırasıyla neyi temsil eder?",
+    "topic": "CFG Components",
+    "question": "In a Control Flow Graph (CFG), what do Nodes and Edges represent respectively?",
     "options": [
-      "Düğümler: İfadeleri / temel kod bloklarını | Kenarlar: İfadeler arasındaki kontrol aktarımlarını (dalları)",
-      "Düğümler: Donanım çiplerini | Kenarlar: Ağ kablolarını",
-      "Düğümler: Kullanıcıları | Kenarlar: Parolaları",
-      "Düğümler: Test sürelerini | Kenarlar: Hata sayılarını"
+      "Nodes represent sequential statements or basic blocks; Edges represent transfers of control between them.",
+      "Nodes represent software testers; Edges represent management meetings.",
+      "Nodes represent physical servers; Edges represent network ethernet cables.",
+      "Nodes represent unit test assertions; Edges represent failure logs."
     ],
     "answer": 0
   },
   {
     "id": 170,
     "chapter": 6,
-    "topic": "Düğüm Kapsamı (Node Coverage)",
-    "question": "Kontrol Akış Grafında 'Düğüm Kapsamı' (Node Coverage) sağlamak, geleneksel kod kapsama metriklerinden hangisine tam olarak denktir?",
+    "topic": "Node Coverage Equivalence",
+    "question": "What standard code coverage metric is mathematically equivalent to Node Coverage on a CFG?",
     "options": [
-      "İfade Kapsamı (Statement Coverage)",
-      "MC/DC Kapsamı",
-      "Mutasyon Kapsamı",
-      "Güvenlik Kapsamı"
+      "Statement Coverage",
+      "Multiple Condition Coverage",
+      "Mutation Score",
+      "Path Coverage"
     ],
     "answer": 0
   },
   {
     "id": 171,
     "chapter": 6,
-    "topic": "Kenar Kapsamı (Edge Coverage)",
-    "question": "Kontrol Akış Grafında 'Kenar Kapsamı' (Edge Coverage) sağlamak, geleneksel kod kapsama metriklerinden hangisine doğrudan karşılık gelir?",
+    "topic": "Edge Coverage Equivalence",
+    "question": "What standard code coverage metric is directly equivalent to Edge Coverage on a CFG?",
     "options": [
-      "Dal / Karar Kapsamı (Branch / Decision Coverage)",
-      "Satır Kapsamı",
-      "Kullanıcı Kabul Kapsamı",
-      "Bellek Kapsamı"
+      "Branch Coverage",
+      "Statement Coverage",
+      "Def-Use Coverage",
+      "Mutation Coverage"
     ],
     "answer": 0
   },
   {
     "id": 172,
     "chapter": 6,
-    "topic": "Kenar-Çifti Kapsamı (Edge-Pair Coverage)",
-    "question": "Graf kapsama kriterlerinden biri olan 'Kenar-Çifti Kapsamı' (Edge-Pair Coverage) neyi gerektirir?",
+    "topic": "Edge-Pair Coverage",
+    "question": "What does Edge-Pair Coverage require on a Control Flow Graph?",
     "options": [
-      "Graftaki uzunluğu en fazla 2 kenar olan (ardışık 3 düğümden oluşan) tüm geçerli yolların test edilmesini",
-      "Sadece ilk ve son kenarın test edilmesini",
-      "Graftaki tüm düğümlerin çift sayıda olmasını",
-      "Her testin iki kez çalıştırılmasını"
+      "Every path of length up to two edges (triples of sequential nodes) must be traversed.",
+      "Only the first and last edges of the graph must be executed.",
+      "The graph must contain an even number of nodes.",
+      "Every test case must be executed exactly twice."
     ],
     "answer": 0
   },
   {
     "id": 173,
     "chapter": 6,
-    "topic": "Basit Yol (Simple Path) Tanımı",
-    "question": "Graf teorisinde ve test tasarımında 'Basit Yol' (Simple Path) kavramı nasıl tanımlanır?",
+    "topic": "Simple Path Definition",
+    "question": "In graph coverage theory, what is a 'Simple Path'?",
     "options": [
-      "İçerisinde hiçbir düğümün birden fazla kez tekrarlanmadığı (yalnızca ilk ve son düğüm döngü oluşturacak şekilde aynı olabilir) yol",
-      "Yalnızca tek bir satırdan oluşan kod",
-      "Döngü içeren ve sonsuza kadar giden yol",
-      "Hiçbir kenarı olmayan düğüm"
+      "A path in which no node appears more than once, except that the first and last nodes may be identical.",
+      "A path that contains zero edges.",
+      "A path that executes in under one millisecond.",
+      "A path that bypasses all conditional statements."
     ],
     "answer": 0
   },
   {
     "id": 174,
     "chapter": 6,
-    "topic": "Asal Yol (Prime Path) Tanımı",
-    "question": "Graf kapsamında 'Asal Yol' (Prime Path) kavramının matematiksel tanımı nedir?",
+    "topic": "Prime Path Definition",
+    "question": "What is the formal definition of a 'Prime Path'?",
     "options": [
-      "Başka hiçbir basit yolun alt yolu (proper subpath) olmayan, maksimal uzunluktaki basit yol",
-      "Düğüm sayısı asal sayı olan herhangi bir yol",
-      "En kısa olan tek kenarlı yol",
-      "Yalnızca hata veren yol"
+      "A simple path that is not a proper subpath of any other simple path.",
+      "A path whose total number of nodes is a prime number.",
+      "The shortest single-edge path in the graph.",
+      "A path that triggers an unhandled exception."
     ],
     "answer": 0
   },
   {
     "id": 175,
     "chapter": 6,
-    "topic": "Asal Yol Kapsamı (Prime Path Coverage)",
-    "question": "Asal Yol Kapsamı (Prime Path Coverage), Tam Yol Kapsamının (Complete Path Coverage) döngülerdeki hangi çıkmazını çözer?",
+    "topic": "Prime Path Coverage Purpose",
+    "question": "What challenge of Complete Path Coverage does Prime Path Coverage resolve?",
     "options": [
-      "Sonsuz döngü içeren programlarda sonsuz sayıda yol oluşması sorununu sonlu ve kapsayıcı bir test kümesiyle çözer.",
-      "Testlerin derlenmesini hızlandırır.",
-      "Tüm değişkenleri otomatik sıfırlar.",
-      "Kullanıcıya bildirim gönderir."
+      "It avoids the infinite path problem caused by loops while providing comprehensive structural path coverage.",
+      "It automatically generates test input data.",
+      "It eliminates the need for node coverage.",
+      "It forces tests to run in sequential order."
     ],
     "answer": 0
   },
   {
     "id": 176,
     "chapter": 6,
-    "topic": "Tam Yol Kapsamı (Complete Path Coverage)",
-    "question": "Bir yazılımda Tam Yol Kapsamı (Complete Path Coverage) sağlamak pratikte neden genellikle imkansızdır?",
+    "topic": "Complete Path Infeasibility",
+    "question": "Why is Complete Path Coverage typically impossible to achieve in practical software testing?",
     "options": [
-      "Döngüler (loops) veya özyinelemeli çağrılar nedeniyle graf üzerinde sonsuz sayıda potansiyel yol bulunabilmesi.",
-      "Yolların renklerinin olmaması.",
-      "İşlemcilerin graf çizememesi.",
-      "Testlerin yalnızca gündüz çalışabilmesi."
+      "Programs with loops or recursion have an infinite or astronomically large number of execution paths.",
+      "Control flow graphs cannot be rendered digitally.",
+      "Compilers delete completed paths.",
+      "Operating systems prohibit multi-path execution."
     ],
     "answer": 0
   },
   {
     "id": 177,
     "chapter": 6,
-    "topic": "Graf Kapsama Hiyerarşisi (Subsumption)",
-    "question": "Graf kapsama kriterleri arasındaki kapsama (subsumption) merdiveni en güçlüden en zayıfa doğru hangi seçenekte doğrudur?",
+    "topic": "Graph Subsumption Hierarchy",
+    "question": "What is the correct subsumption ladder for structural graph coverage from strongest to weakest?",
     "options": [
-      "Complete Path → Prime Path → Edge-Pair → Edge Coverage → Node Coverage",
-      "Node Coverage → Edge Coverage → Edge-Pair → Prime Path → Complete Path",
-      "Edge Coverage → Node Coverage → Prime Path → Complete Path",
-      "Prime Path → Complete Path → Node Coverage → Edge Coverage"
+      "Complete Path -> Prime Path -> Edge-Pair -> Edge Coverage -> Node Coverage",
+      "Node Coverage -> Edge Coverage -> Edge-Pair -> Prime Path -> Complete Path",
+      "Edge Coverage -> Node Coverage -> Prime Path -> Complete Path",
+      "Prime Path -> Complete Path -> Edge-Pair -> Node Coverage"
     ],
     "answer": 0
   },
   {
     "id": 178,
     "chapter": 6,
-    "topic": "Gerçeklenemez Yollar (Infeasible Paths)",
-    "question": "Kontrol Akış Grafında yapısal olarak var olan ancak çelişkili koşullar (örn. `x > 5` iken alt blokta `x < 2` kontrolü) nedeniyle hiçbir test girdisiyle fiilen çalıştırılamayan yollara ne ad verilir?",
+    "topic": "Infeasible Paths",
+    "question": "What is an 'Infeasible Path' in a control flow graph?",
     "options": [
-      "Infeasible Path (Gerçeklenemez / Koşulamaz Yol)",
-      "Prime Path",
-      "Simple Path",
-      "Def-clear Path"
+      "A path that exists structurally in the graph but cannot be executed dynamically due to contradictory branch conditions.",
+      "A path that causes physical hardware failure.",
+      "A path containing a prime number of nodes.",
+      "A path with missing source code comments."
     ],
     "answer": 0
   },
   {
     "id": 179,
     "chapter": 6,
-    "topic": "Veri Akış Testi: Tanım (Definition / Def)",
-    "question": "Veri Akış Testinde (Data Flow Testing) bir değişken için 'Tanım' (Definition / Def) ne anlama gelir?",
+    "topic": "Data Flow - Definition",
+    "question": "In Data Flow Testing, what constitutes a 'Definition' (Def) of a variable?",
     "options": [
-      "Değişkenin bellekte bir değer aldığı konum (atama, girdi okuma veya parametre alma)",
-      "Değişkenin ekrana yazdırılması",
-      "Değişkenin silinmesi",
-      "Değişken tipinin ekranda gösterilmesi"
+      "A location where the variable receives a value via assignment, input reading, or parameter initialization.",
+      "A location where the variable is printed to standard output.",
+      "A location where the variable is evaluated in an if-condition.",
+      "A comment describing the variable's type."
     ],
     "answer": 0
   },
   {
     "id": 180,
     "chapter": 6,
-    "topic": "Veri Akış Testi: Kullanım (Use)",
-    "question": "Veri Akış Testinde 'c-use' (hesaplama kullanımı) ve 'p-use' (koşul kullanımı) arasındaki fark nedir?",
+    "topic": "Data Flow - Use (c-use vs p-use)",
+    "question": "What is the difference between a computational use (c-use) and a predicate use (p-use)?",
     "options": [
-      "c-use değişkenin bir hesaplamada, dönüş değerinde veya çıktıda kullanılmasıdır; p-use ise bir karar / koşul ifadesinde (`if (x > 0)`) dallanmayı belirlemek için kullanılmasıdır.",
-      "c-use C dilinde, p-use Python dilinde kullanılır.",
-      "c-use statik, p-use dinamik testtir.",
-      "İkisi tamamen aynıdır."
+      "A c-use occurs when a variable is used in a computation or output; a p-use occurs when a variable is used in a conditional predicate to direct control flow.",
+      "A c-use occurs in C++; a p-use occurs in Python.",
+      "A c-use is static; a p-use is dynamic.",
+      "They are completely identical."
     ],
     "answer": 0
   },
   {
     "id": 181,
     "chapter": 6,
-    "topic": "Tanımsız-Temiz Yol (Def-Clear Path)",
-    "question": "Bir $v$ değişkeninin bir tanımdan (def) bir kullanıma (use) kadar olan yolunda, aradaki hiçbir düğümde $v$'ye yeni bir değer atanmıyorsa bu yola ne ad verilir?",
+    "topic": "Def-Clear Path",
+    "question": "What is a 'Def-Clear Path' for variable v between node i and node j?",
     "options": [
-      "Def-clear Path (Tanımdan-Temiz Yol)",
-      "Infeasible Path",
-      "Prime Path",
-      "Infinite Loop"
+      "A path from i to j where variable v is not reassigned or redefined at any intervening node.",
+      "A path that deletes variable v from memory.",
+      "A path where variable v is reassigned at every node.",
+      "A path containing zero conditional branches."
     ],
     "answer": 0
   },
   {
     "id": 182,
     "chapter": 6,
-    "topic": "All-Defs Kapsama Kriteri",
-    "question": "Veri Akış Testinde 'All-Defs' (Tüm Tanımlar) kapsama kriteri neyi zorunlu kılar?",
+    "topic": "All-Defs Coverage",
+    "question": "What does the All-Defs coverage criterion require?",
     "options": [
-      "Her bir değişken tanımı için, o tanımdan en az bir kullanıma (use) giden en az bir def-clear yolun test edilmesini",
-      "Tüm değişkenlerin aynı anda silinmesini",
-      "Değişkenlerin global olarak tanımlanmasını",
-      "Kodda hiç değişken kullanılmamasını"
+      "For every definition of a variable, the test suite must execute a def-clear path to at least one use of that definition.",
+      "Every variable must be defined at line 1.",
+      "All variables must be reset to null.",
+      "Every variable must have an associated unit test class."
     ],
     "answer": 0
   },
   {
     "id": 183,
     "chapter": 6,
-    "topic": "All-Uses Kapsama Kriteri",
-    "question": "Veri Akış Testinde 'All-Uses' (Tüm Kullanımlar) kapsama kriteri neyi hedefler?",
+    "topic": "All-Uses Coverage",
+    "question": "What does the All-Uses coverage criterion require?",
     "options": [
-      "Her bir değişken tanımı ile o tanımdan erişilebilen her bir kullanım (use) arasındaki def-clear yolların test edilmesini",
-      "Sadece ekrana yazılan değişkenlerin testini",
-      "Tüm kullanıcıların sisteme giriş yapmasını",
-      "Yalnızca p-use kullanımlarını"
+      "For every definition of a variable, the test suite must execute def-clear paths to every reachable use of that definition.",
+      "Every user in the system must log in simultaneously.",
+      "All variables must be used in mathematical calculations.",
+      "Every method must contain at least one return statement."
     ],
     "answer": 0
   },
   {
     "id": 184,
     "chapter": 6,
-    "topic": "Veri Akışı Anomalisi: ur (Use before Def)",
-    "question": "Bir değişken henüz başlatılmadan / değer atanmadan önce okunmaya çalışılırsa ortaya çıkan veri akışı anomalisi hangisidir?",
+    "topic": "Data Flow Anomaly - ur",
+    "question": "What software flaw corresponds to the 'ur' (use before definition) data flow anomaly?",
     "options": [
-      "ur (use before definition)",
-      "du (definition never used)",
-      "dd (double definition)",
-      "uu (use after use)"
+      "A variable is read or accessed before being initialized or assigned a value.",
+      "A variable is defined twice in a row.",
+      "A variable is never assigned a value.",
+      "A variable is defined but never read."
     ],
     "answer": 0
   },
   {
     "id": 185,
     "chapter": 6,
-    "topic": "Veri Akışı Anomalisi: du (Def never Used)",
-    "question": "Bir değişkene bir değer atanması ancak sonrasında bu değerin hiçbir yerde okunmadan programın sonlanması veya üzerine yeni değer yazılması hangi anomalidir?",
+    "topic": "Data Flow Anomaly - du",
+    "question": "What software issue is indicated by the 'du' (definition never used) data flow anomaly?",
     "options": [
-      "du (definition never used / ölü kod)",
-      "ur (use before definition)",
-      "dd (double definition)",
-      "loop anomaly"
+      "A variable is assigned a value that is never subsequently read, indicating redundant code or a dead store.",
+      "A variable is read before it is allocated.",
+      "A variable is defined in multiple files.",
+      "A function takes too many parameters."
     ],
     "answer": 0
   },
   {
     "id": 186,
     "chapter": 6,
-    "topic": "Veri Akışı Anomalisi: dd (Double Def)",
-    "question": "Bir değişkene atanan değer hiç okunmadan hemen ardından aynı değişkene ikinci kez değer atanması hangi anomalidir?",
+    "topic": "Data Flow Anomaly - dd",
+    "question": "What is the 'dd' (double definition) data flow anomaly?",
     "options": [
-      "dd (double definition)",
-      "ur",
-      "ud",
-      "deadlock"
+      "A variable is assigned a value twice in succession without an intervening use.",
+      "A variable is defined with two different data types.",
+      "A variable is used in two consecutive lines.",
+      "A variable is named using duplicate characters."
     ],
     "answer": 0
   },
   {
     "id": 187,
     "chapter": 6,
-    "topic": "Karar Tablosu (Decision Table) Amacı",
-    "question": "Karar Tablosu (Decision Table) tekniği hangi durumlarda en güçlü test tasarım yöntemidir?",
+    "topic": "Decision Table Purpose",
+    "question": "When is the Decision Table technique most powerful?",
     "options": [
-      "Çok sayıda mantıksal koşulun ve iş kuralının farklı kombinasyonlarla farklı eylemleri tetiklediği karmaşık iş mantıklarında",
-      "Yalnızca tek bir butonun rengini test ederken",
-      "Veritabanı bağlantı hızını ölçerken",
-      "Kullanıcı şifre uzunluğunu denerken"
+      "When modeling complex business logic where various combinations of conditions trigger different outcomes.",
+      "When testing visual button alignment on mobile screens.",
+      "When measuring network bandwidth between servers.",
+      "When profiling memory leaks in background workers."
     ],
     "answer": 0
   },
   {
     "id": 188,
     "chapter": 6,
-    "topic": "Karar Tablosu Bileşenleri",
-    "question": "ISTQB standardına göre bir Karar Tablosunun satır ve sütun yapısı hangi temel parçalardan oluşur?",
+    "topic": "Decision Table Components",
+    "question": "In ISTQB standard notation, what do the rows and columns of a Decision Table contain?",
     "options": [
-      "Satırlar: Koşullar (Conditions) ve Eylemler (Actions) | Sütunlar: Kurallar (Rules / Senaryolar)",
-      "Satırlar: Geliştirici isimleri | Sütunlar: Maaşlar",
-      "Satırlar: Sunucu IP'leri | Sütunlar: Portlar",
-      "Satırlar: Hata logları | Sütunlar: Çözüm yolları"
+      "Rows contain Conditions and Actions; Columns represent Rules (combinations).",
+      "Rows contain developers; Columns contain sprint tasks.",
+      "Rows contain IP addresses; Columns contain port numbers.",
+      "Rows contain test names; Columns contain execution times."
     ],
     "answer": 0
   },
   {
     "id": 189,
     "chapter": 6,
-    "topic": "Karar Tablosu Boyutu Formülü",
-    "question": "Bir karar tablosunda N adet ikili (True/False) bağımsız koşul bulunduğunda, indirgeme yapılmadan önceki tam tablo toplam kaç sütundan (kuraldan) oluşur?",
+    "topic": "Decision Table Size",
+    "question": "How many columns does a full decision table have for N independent binary conditions before minimization?",
     "options": [
-      "2^N sütun",
-      "N sütun",
-      "N + 1 sütun",
-      "N^2 sütun"
+      "2^N",
+      "N",
+      "N + 1",
+      "N^2"
     ],
     "answer": 0
   },
   {
     "id": 190,
     "chapter": 6,
-    "topic": "Karar Tablosu İndirgeme (Minimization)",
-    "question": "Karar tablosunda bir koşulun sonucunun belirli bir eylemi hiç etkilemediği durumlarda o hücreye konulan 'Farketmez' (Don't Care) işareti nedir ve ne işe yarar?",
+    "topic": "Decision Table Minimization",
+    "question": "In a decision table, what is the role of a 'don't care' symbol (-)?",
     "options": [
-      "Tire (-) veya yıldız (*) işareti ile gösterilir; benzer kuralların birleştirilmesini sağlayarak gereksiz test senaryolarını eler.",
-      "Soru işareti (?) konulur ve tablodan silinir.",
-      "X işareti konulur ve sistem hata verir.",
-      "Sıfır (0) konulur ve koşul iptal edilir."
+      "It indicates that an action does not depend on that condition's value, enabling column consolidation.",
+      "It marks a condition that caused a syntax error.",
+      "It indicates that the test case should be deleted.",
+      "It resets all variables to zero."
     ],
     "answer": 0
   },
   {
     "id": 191,
     "chapter": 6,
-    "topic": "Karar Tablosu Kapsamı",
-    "question": "Karar tablosu testinde '%100 Karar Tablosu Kapsamı' (Decision Table Coverage) elde etmek ne demektir?",
+    "topic": "Decision Table Coverage",
+    "question": "What constitutes 100% Decision Table Coverage?",
     "options": [
-      "Tablodaki gerçeklenebilir (feasible) her bir kural / sütun kombinasyonu için en az bir test senaryosu çalıştırmak",
-      "Tüm hücreleri yeşile boyamak",
-      "Sadece tek bir sütunu denemek",
-      "Tabloyu Excel'de açmak"
+      "Executing at least one test case for every feasible column (rule) in the decision table.",
+      "Filling out the table in a spreadsheet without writing tests.",
+      "Testing only the first column of the table.",
+      "Deleting infeasible rows."
     ],
     "answer": 0
   },
   {
     "id": 192,
     "chapter": 6,
-    "topic": "Karar Tablosunun Avantajı",
-    "question": "Ders slaytlarına göre Karar Tablosu tekniğinin en önemli avantajı nedir?",
+    "topic": "Decision Table Advantages",
+    "question": "What is a primary advantage of the Decision Table technique?",
     "options": [
-      "Karmaşık iş akışlarını ve karar mantıklarını eksiksiz modelleyerek hiçbir kural kombinasyonunun gözden kaçmamasını garanti etmesi.",
-      "Tüm performans sorunlarını çözmesi.",
-      "Kod yazımına gerek bırakmaması.",
-      "Donanım hatalarını tamir etmesi."
+      "It systematically covers complex business rule combinations so no unexpected combinations are missed.",
+      "It eliminates the need for software developers.",
+      "It guarantees that server hardware never fails.",
+      "It automatically optimizes database indexing."
     ],
     "answer": 0
   },
   {
     "id": 193,
     "chapter": 6,
-    "topic": "Karar Tablosunun Dezavantajı",
-    "question": "Karar Tablosu tekniğinin en belirgin iki kısıtlaması/dezavantajı nedir?",
+    "topic": "Decision Table Disadvantages",
+    "question": "What are the key limitations of the Decision Table technique?",
     "options": [
-      "Koşul sayısı arttıkça üssel (2^N) olarak hızla büyümesi ve sayısal girdi aralıkları / sınır değerleri (BVA) tek başına test edememesi.",
-      "Yalnızca Windows ortamında çalışması.",
-      "Tablonun yazdırılamaması.",
-      "Hata yakalama gücünün sıfır olması."
+      "It grows exponentially with condition count and cannot test numerical boundary values on its own.",
+      "It only works on operating systems with graphical user interfaces.",
+      "It produces zero test artifacts.",
+      "It can only be used on interpreted languages."
     ],
     "answer": 0
   },
   {
     "id": 194,
     "chapter": 6,
-    "topic": "BVA: 2 Değerli vs 3 Değerli Sınır",
-    "question": "Sınır Değer Analizinde (BVA) 2 değerli sınır yaklaşımı ile 3 değerli sınır yaklaşımı arasındaki fark nedir?",
+    "topic": "BVA - 2-Value vs 3-Value",
+    "question": "What is the difference between 2-value and 3-value Boundary Value Analysis?",
     "options": [
-      "2 değerli yaklaşım sınırın üzerini ve hemen dışını (on ve off) test eder; 3 değerli yaklaşım ise sınırın hemen altını, tam üzerini ve hemen üstünü test eder.",
-      "2 değerli yaklaşım hatalıdır.",
-      "3 değerli yaklaşım sadece negatif sayılarda çalışır.",
-      "İkisi de aynı değerleri üretir."
+      "2-value BVA tests on the boundary and just outside; 3-value BVA tests just below, on, and just above the boundary.",
+      "2-value BVA is invalid in software testing.",
+      "3-value BVA tests only negative numbers.",
+      "Both approaches select the exact same values."
     ],
     "answer": 0
   },
   {
     "id": 195,
     "chapter": 6,
-    "topic": "Durum Geçiş Testi (State Transition Testing)",
-    "question": "Durum Geçiş Testi (State Transition Testing) hangi tür sistemlerin test edilmesinde en uygundur?",
+    "topic": "State Transition Testing",
+    "question": "When is State Transition Testing the most suitable test design technique?",
     "options": [
-      "Sistemin davranışı geçmiş olayların sırasına ve mevcut duruma (State) bağlı olarak değiştiğinde (örn. Sipariş: Verildi → Ödendi → Kargolandı)",
-      "Yalnızca sabit matematik formülleri içeren sistemlerde",
-      "Sadece tek bir ekranı olan web sitelerinde",
-      "Statik HTML sayfalarında"
+      "When application behavior depends on past event history and current system state, such as an order lifecycle.",
+      "When testing pure mathematical formula functions.",
+      "When checking the color of static marketing banners.",
+      "When testing stateless REST GET requests."
     ],
     "answer": 0
   },
   {
     "id": 196,
     "chapter": 6,
-    "topic": "Durum Geçişinde Geçersiz Geçişler",
-    "question": "Bir e-ticaret durum makinesinde 'Kargolanmış' (Shipped) durumundaki bir sipariş için 'İptal Et' (Cancel) eylemi tetiklenirse testte ne doğrulanmalıdır?",
+    "topic": "Invalid State Transitions",
+    "question": "In an e-commerce state machine (Placed -> Paid -> Shipped), what should a test verify if an attempt is made to cancel an already shipped order?",
     "options": [
-      "Bu geçersiz geçişin (invalid transition) sistem tarafından reddedildiği ve siparişin bozulmadığı",
-      "Sistemin hemen kapanması gerektiği",
-      "Kargonun anında imha edilmesi gerektiği",
-      "Kullanıcıya ücretsiz ürün verilmesi gerektiği"
+      "The invalid transition is rejected and the system remains in its valid state.",
+      "The database drops all transaction records.",
+      "The order status automatically changes to Placed.",
+      "The application server immediately restarts."
     ],
     "answer": 0
   },
   {
     "id": 197,
     "chapter": 6,
-    "topic": "Hata Tahmini (Error Guessing)",
-    "question": "Hata Tahmini (Error Guessing) tekniğinin tanımı ve dayanağı nedir?",
+    "topic": "Error Guessing",
+    "question": "What is the foundation of the Error Guessing test technique?",
     "options": [
-      "Test mühendisinin geçmiş deneyimlerine, sezgilerine ve bilinen hata kontrol listelerine dayanarak sistemde hata çıkması en muhtemel noktaları hedeflemesi",
-      "Yazı tura atarak rastgele test senaryosu seçmek",
-      "Yapay zekanın kod yazması",
-      "Müşterinin tahminlerine göre kod yazmak"
+      "The tester's experience, intuition, and knowledge of common historical defects and failure-prone areas.",
+      "Flipping a coin to decide whether to run a test.",
+      "Writing tests without reading requirements.",
+      "Guessing user passwords through brute force."
     ],
     "answer": 0
   },
   {
     "id": 198,
     "chapter": 6,
-    "topic": "Keşif Testi (Exploratory Testing)",
-    "question": "Keşif Testi (Exploratory Testing) nasıl yürütülür?",
+    "topic": "Exploratory Testing",
+    "question": "How is Exploratory Testing executed?",
     "options": [
-      "Test tasarımı, test yürütme ve sistem öğreniminin eşzamanlı olarak, genellikle belirli bir zaman kutusu (time-box) ve odak tüzüğü (charter) içinde yapılmasıyla",
-      "Yalnızca yazılı senaryoların kelimesi kelimesine takip edilmesiyle",
-      "Testlerin tamamen otomasyon botlarına bırakılmasıyla",
-      "Kaynak kodun satır satır ezberlenmesiyle"
+      "Through concurrent test design, execution, and learning within a fixed time-box and targeted test charter.",
+      "By strictly following step-by-step written test scripts.",
+      "By letting an unguided automated script click randomly.",
+      "By performing code reviews without running the software."
     ],
     "answer": 0
   },
   {
     "id": 199,
     "chapter": 6,
-    "topic": "Maksimum Kapsam İçin 4 Adımlı Strateji",
-    "question": "Ders slaytlarının sonuç bölümünde iş mantığı için maksimum test kapsamı sağlamak üzere önerilen 4 adım hangi seçenekte eksiksiz sıralanmıştır?",
+    "topic": "4-Step Maximum Coverage Strategy",
+    "question": "What 4-step sequence is recommended in the conclusions for achieving maximum test coverage for business logic?",
     "options": [
-      "Adım 1: Karar Tablosu → Adım 2: BVA & EP → Adım 3: Alan Düzeyi Kombinasyonlar → Adım 4: Deneyimle Hata Tahmini (Error Guessing)",
-      "Adım 1: Manuel Test → Adım 2: Otomatik Test → Adım 3: Yük Testi → Adım 4: Güvenlik Testi",
-      "Adım 1: Kodlama → Adım 2: Derleme → Adım 3: Canlıya Alma → Adım 4: Dua Etme",
-      "Adım 1: E2E Test → Adım 2: UI Test → Adım 3: Unit Test → Adım 4: API Test"
+      "Step 1: Decision Table -> Step 2: BVA & EP -> Step 3: Field Combinations -> Step 4: Error Guessing",
+      "Step 1: Manual Test -> Step 2: Automated Test -> Step 3: Load Test -> Step 4: Security Test",
+      "Step 1: Coding -> Step 2: Compiling -> Step 3: Deploying -> Step 4: Bug Fixing",
+      "Step 1: UI Test -> Step 2: API Test -> Step 3: Unit Test -> Step 4: System Test"
     ],
     "answer": 0
   },
   {
     "id": 200,
     "chapter": 6,
-    "topic": "Vize Kapsamı ve Bütünleştirme",
-    "question": "CEN315 Test Mühendisliği vize konularının (Hafta 1-6) tamamı göz önüne alındığında, profesyonel bir test mühendisinin nihai hedefi nedir?",
+    "topic": "Midterm Scope Synthesis",
+    "question": "Considering the complete scope of CEN315 weeks 1 through 6, what is the ultimate goal of professional test engineering?",
     "options": [
-      "Farklı test seviyelerini, arayüzlerini ve tasarım tekniklerini uygun risk modelleriyle birleştirerek yazılımın güvenilirliğini, kalitesini ve sürdürülebilirliğini proaktif olarak güvenceye almak.",
-      "Sadece tek bir aracı öğrenip tüm projelerde yalnızca onu kullanmak.",
-      "Yazılım geliştiricilerle hiç iletişim kurmadan sadece hata raporu yazmak.",
-      "Kod kapsamı %100 olduktan sonra başka hiçbir test yapmamak."
+      "Proactively assuring software reliability, quality, and maintainability by applying appropriate test levels, interfaces, and rigorous design techniques guided by risk.",
+      "Relying solely on 100% line coverage without writing assertions.",
+      "Avoiding communication with software developers.",
+      "Testing only after the product has been sold to customers."
     ],
     "answer": 0
   }
