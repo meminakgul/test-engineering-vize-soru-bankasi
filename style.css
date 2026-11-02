@@ -1,0 +1,386 @@
+/* ========================================================
+   GÖZ YORMAYAN MİNUMALİST STİL DOSYASI
+   Kullanıcı isteğine uygun: Şekilsiz, düz, net ve sade
+   ======================================================== */
+
+:root {
+  /* Göz yormayan yumuşak sıcak kağıt tonu (Açık mod) */
+  --bg-color: #f3f1eb;
+  --text-color: #212529;
+  --card-bg: #e7e5df;
+  --border-color: #d1cfc9;
+  --hover-bg: #dc dad3;
+  --btn-bg: #e4e2dc;
+  --btn-border: #c8c6bf;
+  --btn-hover: #d7d5ce;
+  
+  /* Doğru / Yanlış Renkleri */
+  --correct-bg: #d4edda;
+  --correct-border: #28a745;
+  --correct-text: #155724;
+
+  --wrong-bg: #f8d7da;
+  --wrong-border: #dc3545;
+  --wrong-text: #721c24;
+}
+
+[data-theme="dark"] {
+  /* Göz yormayan koyu mod */
+  --bg-color: #1a1b1d;
+  --text-color: #e4e5e7;
+  --card-bg: #26272b;
+  --border-color: #3b3c41;
+  --hover-bg: #303136;
+  --btn-bg: #2d2e33;
+  --btn-border: #44454b;
+  --btn-hover: #38393f;
+
+  --correct-bg: #1c3b24;
+  --correct-border: #2ea043;
+  --correct-text: #7ee787;
+
+  --wrong-bg: #4a191e;
+  --wrong-border: #da3633;
+  --wrong-text: #ffa198;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  user-select: text;
+}
+
+/* Üst Kontrol Çubuğu */
+.top-bar {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 20px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Buton Stilleri */
+.tool-btn {
+  background-color: var(--btn-bg);
+  color: var(--text-color);
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.15s;
+}
+
+.tool-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.tool-btn.active {
+  background-color: #2b7a78;
+  color: #ffffff;
+  border-color: #205c5a;
+}
+
+.chevron-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s;
+}
+
+.chevron-btn:hover {
+  background-color: var(--btn-bg);
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s;
+}
+
+.theme-btn:hover {
+  background-color: var(--btn-bg);
+}
+
+/* Soruya Atlama Açılır Menüsü */
+.dropdown-wrapper {
+  position: relative;
+}
+
+.jump-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  width: 320px;
+  max-height: 400px;
+  z-index: 100;
+  padding: 12px;
+  flex-direction: column;
+}
+
+.jump-menu.open {
+  display: flex;
+}
+
+.jump-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.jump-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  overflow-y: auto;
+  max-height: 320px;
+  padding-right: 4px;
+}
+
+.jump-item {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 12px;
+  padding: 6px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.jump-item:hover {
+  background-color: var(--hover-bg);
+}
+
+.jump-item.answered-correct {
+  background-color: var(--correct-bg);
+  border-color: var(--correct-border);
+  color: var(--correct-text);
+  font-weight: bold;
+}
+
+.jump-item.answered-wrong {
+  background-color: var(--wrong-bg);
+  border-color: var(--wrong-border);
+  color: var(--wrong-text);
+  font-weight: bold;
+}
+
+.jump-item.current {
+  outline: 2px solid #0056b3;
+}
+
+/* Ana Soru Konteyneri */
+.quiz-container {
+  width: 100%;
+  max-width: 820px;
+  margin: 20px auto 40px;
+  padding: 0 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Soru Sayacı (Resimdeki: Soru: 253 / 501) */
+.question-counter {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text-color);
+}
+
+/* Soru Metni */
+.question-text {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.55;
+  margin-bottom: 26px;
+  color: var(--text-color);
+}
+
+/* Seçenekler Listesi */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+/* Tek Bir Seçenek Butonu (Resimdeki gibi düz ve köşeleri hafif yuvarlak) */
+.option-btn {
+  width: 100%;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-family: inherit;
+  line-height: 1.45;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.option-btn:hover:not(:disabled) {
+  background-color: var(--hover-bg);
+}
+
+/* Doğru Seçenek (Yeşil) - İkinci tıklamada sonraki soruya geçmesi için tıklanabilir kalır */
+.option-btn.correct {
+  background-color: var(--correct-bg) !important;
+  border-color: var(--correct-border) !important;
+  color: var(--correct-text) !important;
+  font-weight: 600;
+  cursor: pointer !important;
+}
+
+.option-btn.correct:hover {
+  background-color: var(--correct-bg) !important;
+  opacity: 0.9;
+}
+
+/* Yanlış Seçenek (Kırmızı) */
+.option-btn.wrong {
+  background-color: var(--wrong-bg) !important;
+  border-color: var(--wrong-border) !important;
+  color: var(--wrong-text) !important;
+  font-weight: 600;
+  cursor: not-allowed !important;
+}
+
+.option-btn:disabled:not(.correct) {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Alt Navigasyon Çubuğu (Resimdeki: Önceki ve Sonraki Butonları) */
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: auto;
+  padding: 20px 0;
+}
+
+.nav-btn {
+  background-color: var(--btn-bg);
+  color: var(--text-color);
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
+  padding: 9px 24px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+  min-width: 90px;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background-color: var(--btn-hover);
+}
+
+.nav-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 600px) {
+  .quiz-container {
+    padding: 0 16px;
+    margin-top: 10px;
+  }
+
+  .question-counter {
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
+
+  .question-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .option-btn {
+    padding: 12px 14px;
+    font-size: 14.5px;
+  }
+
+  .top-bar {
+    padding: 12px 16px 6px;
+  }
+}
+

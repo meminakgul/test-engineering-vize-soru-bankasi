@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEN315 Test Engineering - Vize Soru Bankası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Üst Menü / Kontrol Çubuğu -->
+  <header class="top-bar">
+    <div class="top-left">
+      <button id="shuffleBtn" class="tool-btn" title="Soruları rastgele sıraya sok (Tekrar etmez)">
+        <span class="icon">🔀</span> <span id="shuffleText">Karışık Sıra: Kapalı</span>
+      </button>
+      <button id="resetShuffleBtn" class="tool-btn" style="display:none;" title="Soruları yeniden karıştır">
+        🔄 Yeniden Karıştır
+      </button>
+    </div>
+
+    <!-- Soru Atlama Menüsü (Resimdeki aşağı ok) -->
+    <div class="top-center">
+      <div class="dropdown-wrapper">
+        <button id="jumpDropdownBtn" class="chevron-btn" title="Soruya Git" aria-label="Soruya Git">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div id="jumpMenu" class="jump-menu">
+          <div class="jump-menu-header">
+            <span>Soru Seç (Toplam 200)</span>
+            <button id="closeJumpMenu" class="close-btn">&times;</button>
+          </div>
+          <div id="jumpGrid" class="jump-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-right">
+      <button id="themeToggleBtn" class="theme-btn" title="Koyu / Açık Tema" aria-label="Temayı Değiştir">
+        <svg class="moon-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Ana Soru Alanı -->
+  <main class="quiz-container">
+    <!-- Soru Sayacı: Örn: Soru: 1 / 200 -->
+    <div class="question-counter" id="questionCounter">Soru: 1 / 200</div>
+
+    <!-- Soru Metni: Örn: 1. Modern Test Mühendisliği... -->
+    <div class="question-text" id="questionText">Soru yükleniyor...</div>
+
+    <!-- Seçenekler A, B, C, D -->
+    <div class="options-container" id="optionsContainer">
+      <!-- JavaScript ile yüklenecektir -->
+    </div>
+
+    <!-- Alt Navigasyon Butonları: Önceki / Sonraki -->
+    <div class="navigation-bar">
+      <button id="prevBtn" class="nav-btn">Önceki</button>
+      <button id="nextBtn" class="nav-btn">Sonraki</button>
+    </div>
+  </main>
+
+  <!-- Sorular Verisi ve Uygulama Mantığı -->
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
