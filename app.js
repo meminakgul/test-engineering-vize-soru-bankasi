@@ -31,6 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeJumpMenu = document.getElementById('closeJumpMenu');
   const jumpGrid = document.getElementById('jumpGrid');
   const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const explainBtn = document.getElementById('explainBtn');
+  const explainBtnText = document.getElementById('explainBtnText');
+  const explanationBox = document.getElementById('explanationBox');
+  const explanationContent = document.getElementById('explanationContent');
+  let isExplanationOpen = false;
 
   // Harf Etiketleri
   const optionLetters = ['A', 'B', 'C', 'D'];
@@ -51,6 +56,31 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('test_eng_theme', 'dark');
     }
   });
+
+  // Açıklama Kutusu Yönetimi
+  function setExplanationState(open) {
+    isExplanationOpen = open;
+    if (!explainBtn || !explanationBox || !explanationContent) return;
+
+    if (isExplanationOpen) {
+      const qIndex = order[currentIndex];
+      const q = QUESTIONS[qIndex];
+      explanationContent.innerHTML = q.explanation || "Bu soru için ek açıklama bulunmuyor.";
+      explanationBox.style.display = 'block';
+      if (explainBtnText) explainBtnText.innerText = "Açıklamayı Gizle";
+      explainBtn.classList.add('active');
+    } else {
+      explanationBox.style.display = 'none';
+      if (explainBtnText) explainBtnText.innerText = "Açıklamayı Göster";
+      explainBtn.classList.remove('active');
+    }
+  }
+
+  if (explainBtn) {
+    explainBtn.addEventListener('click', () => {
+      setExplanationState(!isExplanationOpen);
+    });
+  }
 
   // Fisher-Yates Karıştırma Algoritması
   function shuffleArray(arr) {
@@ -167,6 +197,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderQuestion() {
     const qIndex = order[currentIndex];
     const q = QUESTIONS[qIndex];
+
+    // Yeni soruya geçerken açıklamayı kapat
+    setExplanationState(false);
 
     // Sayaç ve Soru Metni
     counterEl.innerText = `Soru: ${currentIndex + 1} / ${totalQuestions}`;
@@ -363,4 +396,3 @@ document.addEventListener('DOMContentLoaded', () => {
   restoreSavedState();
   renderQuestion();
 });
-

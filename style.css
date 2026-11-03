@@ -9,7 +9,7 @@
   --text-color: #212529;
   --card-bg: #e7e5df;
   --border-color: #d1cfc9;
-  --hover-bg: #dc dad3;
+  --hover-bg: #dcdad3;
   --btn-bg: #e4e2dc;
   --btn-border: #c8c6bf;
   --btn-hover: #d7d5ce;
@@ -22,6 +22,11 @@
   --wrong-bg: #f8d7da;
   --wrong-border: #dc3545;
   --wrong-text: #721c24;
+
+  /* Bilgi / Açıklama Kutusu Renkleri */
+  --info-bg: #eaf1fb;
+  --info-border: #b9d3f8;
+  --info-text: #1a56ad;
 }
 
 [data-theme="dark"] {
@@ -42,6 +47,10 @@
   --wrong-bg: #4a191e;
   --wrong-border: #da3633;
   --wrong-text: #ffa198;
+
+  --info-bg: #1e2638;
+  --info-border: #2b3d5c;
+  --info-text: #8ab4f8;
 }
 
 * {
@@ -322,6 +331,90 @@ body {
 .option-btn:disabled:not(.correct) {
   cursor: not-allowed;
   opacity: 0.7;
+}
+
+/* Açıklama Alanı */
+.explanation-section {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.explain-btn {
+  align-self: flex-start;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13.5px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+}
+
+.explain-btn:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--text-color);
+}
+
+.explain-btn.active {
+  background-color: var(--info-bg);
+  border-color: var(--info-border);
+  color: var(--info-text);
+  font-weight: 600;
+}
+
+.explain-icon {
+  font-size: 15px;
+}
+
+.explanation-box {
+  background-color: var(--info-bg);
+  border: 1px solid var(--info-border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--text-color);
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.explanation-header {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.explanation-badge {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: var(--info-text);
+  color: #ffffff;
+}
+
+.explanation-content {
+  color: var(--text-color);
+  white-space: pre-line;
+}
+
+.explanation-content strong {
+  color: var(--info-text);
 }
 
 /* Alt Navigasyon Çubuğu (Resimdeki: Önceki ve Sonraki Butonları) */
